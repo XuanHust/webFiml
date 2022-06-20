@@ -1,0 +1,2584 @@
+[
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-06T10:21:01.000Z"
+            },
+            "_id": "6274d9d53a2c0c6289bdb0d8",
+            "name": "Thar",
+            "origin_name": "Thar",
+            "content": "<p>Một viên cảnh sát kì cựu nhận thấy cơ hội chứng tỏ bản thân khi một vụ sát hại và âm mưu tra tấn ghê rợn của một người lạ làm chấn động thị trấn sa mạc tĩnh lặng.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/thar-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "1g 48phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "thar",
+            "year": 2022,
+            "actor": [
+                "Anil Kapoor",
+                " Harshvardhan Kapoor",
+                " Fatima Sana Shaikh",
+                " Satish Kaushik",
+                " Jitendra Joshi",
+                " Sanjay Bishnoi",
+                " Sanjay Dadhich",
+                " Mukti Mohan"
+            ],
+            "director": [
+                "Raj Singh Chaudhary"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Ấn Độ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Thar",
+                        "link_embed": "https://kd.hd-bophim.com/share/0bf76a53f4021dd7bd49affd1419a2e7",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220506/11035_774050f3/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-05T16:29:07.000Z"
+            },
+            "_id": "6273fb533a2c0c6289bd327d",
+            "name": "Phù thủy rừng Blair",
+            "origin_name": "Blair Witch",
+            "content": "<p>Sau khi tìm thấy đoạn phim về người chị gái mất tích từ lâu của mình, James Donahue đi vào rừng để tìm cô ấy. Đồng hành cùng anh là bạn bè và một nhà làm phim tài liệu.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/phu-thuy-rung-blair-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "1g 29phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "phu-thuy-rung-blair",
+            "year": 2016,
+            "actor": [
+                "Valorie Curry",
+                " James Allen McCune",
+                " Corbin Reid",
+                " Brandon Scott",
+                " Wes Robinson",
+                " Callie Hernandez"
+            ],
+            "director": [
+                "Adam Wingard"
+            ],
+            "category": [
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Phù thủy rừng Blair",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/306b0c0a95972617146049ce1a9a1613",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220505/14371_ab2b5999/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-05T15:49:44.000Z"
+            },
+            "_id": "6273f2183a2c0c6289bd2e13",
+            "name": "Đứa con thứ 7",
+            "origin_name": "Seventh Son",
+            "content": "<p>Ở thế kỷ 18, người trừ quỷ học việc Tom Ward là trung tâm trong cuộc chiến giữa thiện và ác khi mụ phù thủy Mẹ Malkin trốn thoát khỏi nơi mụ bị giam cầm.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/dua-con-thu-7-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "1g 42phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "dua-con-thu-7",
+            "year": 2014,
+            "actor": [
+                "Jeff Bridges",
+                " Ben Barnes",
+                " Julianne Moore",
+                " Alicia Vikander",
+                " Antje Traue",
+                " Olivia Williams",
+                " John DeSantis",
+                " Kit Harington",
+                " Djimon Hounsou",
+                " Gerard Plunkett",
+                " Jason Scott Lee"
+            ],
+            "director": [
+                "Sergei Bodrov"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Đứa con thứ 7",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/cbd7fb1bba4de3486f76147a75f3ec89",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220505/14364_6788f457/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-05T15:46:40.000Z"
+            },
+            "_id": "6273f1603a2c0c6289bd2d9a",
+            "name": "Căn hầm",
+            "origin_name": "10 Cloverfield Lane",
+            "content": "<p>Sau khi chia tay vị hôn phu, một phụ nữ gặp tai nạn và tỉnh dậy trong hầm trú ẩn cùng một người đàn ông. Anh ta thuyết phục cô rằng thảm họa tận thế đã xảy ra.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/can-ham-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "1g 44phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "can-ham",
+            "year": 2016,
+            "actor": [
+                "John Goodman",
+                " Mary Elizabeth Winstead",
+                " John Gallagher Jr.",
+                " Suzanne Cryer"
+            ],
+            "director": [
+                "Dan Trachtenberg"
+            ],
+            "category": [
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Khoa Học"
+                },
+                {
+                    "name": "Bí ẩn"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Căn hầm",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/2d0122e6c17cdb89f8eed4d75b5f5eef",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220505/14359_6639df84/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-05T06:28:52.000Z"
+            },
+            "_id": "62736ea43a2c0c6289bc7cb8",
+            "name": "Phù Thủy Tối Thượng Trong Đa Vũ Trụ Hỗn Loạn",
+            "origin_name": "Doctor Strange in the Multiverse of Madness",
+            "content": "<p>Doctor Strange, với sự giúp đỡ của các đồng minh thần bí cả cũ và mới, vượt qua các thực tại luân phiên nguy hiểm và đáng sợ của Đa vũ trụ để đối đầu với một kẻ thù mới bí ẩn.</p>",
+            "type": "single",
+            "status": "trailer",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/phu-thuy-toi-thuong-trong-da-vu-tru-hon-loan-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "126 Phút",
+            "episode_current": "Trailer",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "phu-thuy-toi-thuong-trong-da-vu-tru-hon-loan",
+            "year": 2022,
+            "actor": [
+                "Benedict Cumberbatch",
+                "Elizabeth Olsen",
+                "Xochitl Gomez",
+                "Chiwetel Ejiofor",
+                "Benedict Wong"
+            ],
+            "director": [
+                "Sam Raimi"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Kinh Dị"
+                },
+                {
+                    "name": "Bí ẩn"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "",
+                        "slug": "",
+                        "filename": "",
+                        "link_embed": "",
+                        "link_m3u8": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-04T14:08:12.000Z"
+            },
+            "_id": "627288cc3a2c0c6289bbe784",
+            "name": "Diệp Vấn: Cửu Long Thành Trại",
+            "origin_name": "Ip Man and Four Kings",
+            "content": "<p>Bộ phim Diệp Vấn: Cửu Long Thành Trại - IP Man And Four Kings là bộ phim điện ảnh được chỉ đạo sản xuất bởi đạo diễn Phó Lợi Vĩ với các diễn viên chính như Đường Văn Long, Lâu Nam Quang, Lâm Phong Diệp, Triệu Lâm, Trần Ngọc Dũng,.. Diệp Vấn: Thành Cửu Long lấy bối cảnh vào những năm 1950, có một lượng lớn các võ sĩ đã đến HongKong để mở phòng tập đấm bốc. Trong đó Diệp Vấn (Đường Văn Long) là một võ sĩ vô danh không có tiếng tăm gì nổi bật đã làm cho Trịnh Đức Long (Lâm Phong Diệp đóng) chú ý. Trịnh Đức Long sợ rằng Diệp Vấn sẽ là mối đe dọa của chính bản thân mình nên đã gán cho Diệp Vấn tội diệt môn và hơn thế nữa hắn còn muốn mượn tay cảnh sát để tiêu diệt Diệp Vấn. Liệu rằng âm mưu độc ác của Trịnh Đức Long có thực hiện được và đến cuối cùng tội ác của hắn có được đưa ra ánh sáng?</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/diep-van-cuu-long-thanh-trai-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "diep-van-cuu-long-thanh-trai",
+            "year": 2019,
+            "actor": [
+                "Fengye Lin"
+            ],
+            "director": [
+                "Liwei Fu"
+            ],
+            "category": [
+                {
+                    "name": "Võ Thuật"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "diep-van-cuu-long-thanh-trai-ip-man-and-four-kings",
+                        "link_embed": "https://hd.1080phim.com/share/823b2d10224a6a29f91fc7c0f46f1b8e",
+                        "link_m3u8": "https://hd.1080phim.com/20220504/10985_ed9a31ea/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-04T14:05:10.000Z"
+            },
+            "_id": "627288163a2c0c6289bbe6a3",
+            "name": "Chiến Binh Vũ Trụ: Ngày Tính Sổ",
+            "origin_name": "Universal Soldier: Day of Reckoning",
+            "content": "<p>Bộ phim là câu chuyện về một nhân vật tên John do Scott Adkins thủ vai đi trả thù cho con gái và vợ mình sau khi bị Luc Deveraux (Van Damme hãm hại). Nhưng liệu sự thật có phải như vậy không?</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/chien-binh-vu-tru-ngay-tinh-so-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "chien-binh-vu-tru-ngay-tinh-so",
+            "year": 2012,
+            "actor": [
+                "Jean-Claude Van Damme",
+                " Dolph Lundgren",
+                " Scott Adkins"
+            ],
+            "director": [
+                "John Hyams"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "chien-binh-vu-tru-ngay-tinh-so-universal-soldier-day-of-reckoning",
+                        "link_embed": "https://hd.1080phim.com/share/9cc25407f209e031babdac7d3c520ccb",
+                        "link_m3u8": "https://hd.1080phim.com/20220504/10979_aca242a9/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-05-02T12:20:34.000Z"
+            },
+            "_id": "626fcc923a2c0c6289b9c0ef",
+            "name": "Chiến Hạm",
+            "origin_name": "Battleship",
+            "content": "<p>Battleship là một bộ phim chiến tranh khoa học viễn tưởng dựa theo game cùng tên do hãng Milton Bradley phát triển. Battleship nói về cuộc giao chiến ác liệt giữa một nhóm người ngoài hành tinh mang tên “The Regents” – những người tới Trái Đất với sứ mệnh xây dựng một nguồn năng lượng trên đại dương và một hạm đội hải quân Mỹ đóng trên vùng biển gần quần đảo Hawaii. Với kinh phí 200 triệu USD, Battleship có sự xuất hiện của ngôi sao ca nhạc Rihanna trong vai một chuyên gia vũ khí trên tàu USS John Paul Jones.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/chien-ham-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "chien-ham",
+            "year": 2012,
+            "actor": [
+                "Alexander Skarsgård",
+                " Brooklyn Decker",
+                " Liam Neeson"
+            ],
+            "director": [
+                "Peter Berg"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Chiến Tranh"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "chien-ham-battleship",
+                        "link_embed": "https://kd.hd-bophim.com/share/5a5a2994bba00e071d152145344b741d",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220502/10562_9898709b/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-30T20:32:29.000Z"
+            },
+            "_id": "626d9cdd3a2c0c6289b8cde0",
+            "name": "Người Băng 2",
+            "origin_name": "Iceman 2: The Time Traveler",
+            "content": "<p>Người Băng 2 tiếp nối chuyến phiêu lưu của một Cẩm y vệ đời nhà Minh – Hạ Anh (Chân Tử Đan đóng), sau khi được giải thoát khỏi lớp băng từ một trận đánh gần 4 thế kỷ trước. Tại Hồng Kông, Người Băng được tái sinh, gặp gỡ và thân thiết với Tiểu Mỹ. Nhưng do là người duy nhất nắm giữ bí mật du hành thời gian, anh bị truy lùng bởi cảnh sát và truyền thông. Anh phải đến Bắc Kinh quay ngược dòng thời gian về lại Minh triều, bằng cách sử dụng khả năng điều khiển Kim Cầu, tìm cách thay đổi lịch sử để bảo vệ những người thân yêu. Tuy nhiên, một cái bẫy đang chờ sẵn khi anh quay về quá khứ. Điều gì sẽ xảy ra khi anh thay đổi lịch sử?</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/nguoi-bang-2-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "nguoi-bang-2",
+            "year": 2018,
+            "actor": [
+                "Donnie Yen",
+                " Baoqiang Wang",
+                " Huang Sheng-Yi"
+            ],
+            "director": [
+                "Raymond Yip Wai-Man"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Cổ Trang"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "nguoi-bang-2-iceman-2-the-time-traveler",
+                        "link_embed": "https://hd.1080phim.com/share/2737a91408afcc2526e348105892dd3a",
+                        "link_m3u8": "https://hd.1080phim.com/20220429/10253_1770b0fc/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-30T20:03:37.000Z"
+            },
+            "_id": "626d96193a2c0c6289b8c807",
+            "name": "Sát Phá Lang",
+            "origin_name": "Kill Zone: Sha Po Lang",
+            "content": "<p>Bộ phim là cuộc đối đầu giữa hai cảnh sát điều tra với một tên trùm xã hội đen khôn ngoan và trợ thủ của hắn, một sát thủ vô tình. Những tình tiết gay cấn, những pha biểu diễn võ thuật đẹp mắt, các diễn viên nhập vai… Bộ phim đã kéo khán giả trở lại với thể loại phim hành động đặc trưng của Hong Kong.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/sat-pha-lang-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "sat-pha-lang",
+            "year": 2005,
+            "actor": [
+                "Nhậm Đạt Hoa",
+                " Donnie Yen",
+                " Sammo Hung Kam-Bo"
+            ],
+            "director": [
+                "Wilson Yip"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Võ Thuật"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "sat-pha-lang-kill-zone-sha-po-lang",
+                        "link_embed": "https://hd.1080phim.com/share/cae7115f44837c806c9b23ed00a1a28a",
+                        "link_m3u8": "https://hd.1080phim.com/20220429/10272_e41982c6/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-30T20:03:16.000Z"
+            },
+            "_id": "626d96043a2c0c6289b8c7fa",
+            "name": "Sát Phá Lang 2",
+            "origin_name": "SPL 2: A Time For Consequences",
+            "content": "<p>Sau đúng 10 năm, khán giả mới sắp sửa được chứng kiến phần tiếp theo của bộ phim hành động hấp dẫn Sát Phá Lang. Tuy nhiên, phim chẳng liên quan mấy tới phần đầu, dàn diễn viên chính cũng hoàn toàn thay đổi khi Chân Tử Đan và Hồng Kim Bảo rút lui, nhường chỗ cho Tony Jaa và Cổ Thiên Lạc. Diệp Vỹ Tín cũng thôi làm đạo diễn và thay thế anh là Trịnh Bảo Thụy. Câu chuyện trong Sát Phá Lang 2 tập trung vào một nhân viên cai ngục người Thái (Tony Jaa), khi anh này buộc phải giải cứu viên cảnh sát chìm duy nhất có thể cứu mạng con gái anh trong tình thế ngàn cân treo sợi tóc.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/sat-pha-lang-2-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "sat-pha-lang-2",
+            "year": 2015,
+            "actor": [
+                "Tony Jaa",
+                " Andy On",
+                " Jacky Wu"
+            ],
+            "director": [
+                "Pou-Soi Cheang"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Võ Thuật"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "sat-pha-lang-2-spl-2-a-time-for-consequences",
+                        "link_embed": "https://hd.1080phim.com/share/73dd2e5d59ee0b29b52058d4393b170f",
+                        "link_m3u8": "https://hd.1080phim.com/20220429/10270_c322a6a6/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-27T16:10:40.000Z"
+            },
+            "_id": "62696b00fa02df5563cbf923",
+            "name": "Huyền Thoại Triệu Tử Long",
+            "origin_name": "Three Kingdoms: Resurrection of the Dragon",
+            "content": "<p>Phim chủ yếu kể về cuộc đời Triệu Tử Long (Triệu Vân) sau khi Lưu Bị ,Trương Phi, Quan Công qua đời. Bối cảnh của phim là cuộc chiến cuối cùng giữa Thục và Ngụy. Triệu Tử Long chỉ đạo con của Trương Phi và Quan Công chinh phạt chiến trường. Ngoài ra, phim còn thông qua hồi ức 60 năm trước của Triệu Tử Long để tái hiện lại những trận đánh hoành tráng và nổi tiếng của thời tam quốc.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/huyen-thoai-trieu-tu-long-2008-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "huyen-thoai-trieu-tu-long-2008",
+            "year": 2008,
+            "actor": [
+                "Lưu Đức Hoa",
+                " Sammo Hung Kam-Bo",
+                " Maggie Q"
+            ],
+            "director": [
+                "Daniel Lee"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Chiến Tranh"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                },
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "huyen-thoai-trieu-tu-long-three-kingdoms-resurrection-of-the-dragon",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/aa25a165a029282652901f835f9f83b5",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220427/13108_4e73dbf9/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-27T14:15:58.000Z"
+            },
+            "_id": "6269501efa02df5563cbe1f6",
+            "name": "Đại Chiến Thái Bình Dương 2: Trỗi Dậy",
+            "origin_name": "Pacific Rim 2: Uprising",
+            "content": "<p>Theo chia sẻ mới nhất của chính đạo diễn Guillermo del Toro, Pacific Rim 2 sẽ không nối tiếp ngay phần một. Ông nói: “Bộ phim sẽ lấy bối cảnh một vài năm sau khi tập trước khép lại. Thế giới đã không còn quái vật nữa nên phim sẽ kể về những gì xảy đến với công nghệ người máy Jaeger khi hiểm họa Kaiju được diệt trừ. Đó là một sự phát triển lớn đấy”. Tuy nhiên, những ai trót yêu mến Kaiju cũng không cần phải quá lo lắng bởi ngay sau đó, del Toro chia sẻ thêm rằng các quái vật trong tập phim mới trông sẽ rất khác. Thế nên, bằng một cách nào đó, Kaiju hẳn sẽ trở lại và tiếp tục gieo rắc tai ương, đe dọa mối an nguy của Trái đất. Ông trùm chợ đen Hannibal Chau là một trong những nhân vật nhiều khả năng sẽ trở lại trong Pacific Rim 2. Ngoài ra, Guillermo del Toro cũng bày tỏ niềm yêu thích đối với các nhân vật phụ gồm tiến sĩ Hermann Gottlieb, Newton Geiszler và ông trùm chợ đen Hannibal Chau. Chính bởi vậy, cả ba nhiều khả năng sẽ tiếp tục góp mặt trong Pacific Rim 2. Pacific Rim 2 dự kiến ra mắt khán giả trong đầu mùa hè 2017.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/dai-chien-thai-binh-duong-2-troi-day-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "dai-chien-thai-binh-duong-2-troi-day",
+            "year": 2018,
+            "actor": [
+                "John Boyega",
+                " Scott Eastwood",
+                " Cailee Spaeny"
+            ],
+            "director": [
+                "Steven S. DeKnight"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "dai-chien-thai-binh-duong-2-troi-day-pacific-rim-2-uprising",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/58dcf38e3941ea8a0e4bd27dca3326a4",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220427/13099_934ff758/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-27T14:00:34.000Z"
+            },
+            "_id": "62694c82fa02df5563cbdeee",
+            "name": "5 Anh Em Siêu Nhân",
+            "origin_name": "Power Rangers",
+            "content": "<p>Phim 5 Anh Em Siêu Nhân - Power Rangers 2017: kể về một nhóm các cô bé cậu bé không được hoan nghênh, thường bị bắt nạt ở trường trung học. Một ngày nọ, họ tình cờ phát hiện ra một nguồn sức mạnh vô địch và quyết định dùng năng lực mới này để giải cứu thế giới.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/5-anh-em-sieu-nhan-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "5-anh-em-sieu-nhan",
+            "year": 2017,
+            "actor": [
+                "Dacre Montgomery",
+                " Naomi Scott",
+                " RJ Cyler"
+            ],
+            "director": [
+                "Dean Israelite"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                },
+                {
+                    "name": "Canada"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "5-anh-em-sieu-nhan-power-rangers",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/9084df79b057a0c74bb6b6619c9857e6",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220427/13092_ab20c925/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-26T15:41:11.000Z"
+            },
+            "_id": "62681297fa02df5563cb2a4e",
+            "name": "Nhà Trọ Kinh Hoàng",
+            "origin_name": "Vacancy",
+            "content": "<p>Trong đêm tối, xe của David và Amy Foxs bị hỏng giữa đường họ buộc phải tìm nơi nghỉ chân qua đêm. Muốn chờ tới sáng để sửa xe, họ quyết định chọn một nhà trọ, do người kỳ lạ quản lý, Mason. Họ nhanh chóng nhận ra rằng những cuốn phim họ đang xem không phải là những đoạn phim bình thường mà đó là những cảnh khủng khiếp quay lại chính người từng trọ căn phòng này...</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/nha-tro-kinh-hoang-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "nha-tro-kinh-hoang",
+            "year": 2007,
+            "actor": [
+                "Kate Beckinsale",
+                " Luke Wilson",
+                " Frank Whaley"
+            ],
+            "director": [
+                "Nimród Antal"
+            ],
+            "category": [
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "nha-tro-kinh-hoang-vacancy",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/3521a3a5bcfea0fe1189f8bc13af1f99",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220426/12842_afcc0f1d/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-25T16:55:49.000Z"
+            },
+            "_id": "6266d295489068f643a21f1f",
+            "name": "Sát Phá Lang 3: Tham Lang",
+            "origin_name": "SPL 3: Paradox",
+            "content": "<p>Phim Sát Phá Lang 3: Tham Lang - SPL 3: Paradox 2017: Xoay quanh câu chuyện truy tìm và trả thù kẻ bắt cóc con của Lee. Trong quá trình sang Thái Lan tìm kiếm con gái mình, Lee còn phát hiện ra bí mật liên quan đến ứng cử viên thị trưởng của Bangkok.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/sat-pha-lang-3-tham-lang-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "sat-pha-lang-3-tham-lang",
+            "year": 2017,
+            "actor": [
+                "Cổ Thiên Nhạc",
+                " Tony Jaa",
+                " Đặng Lệ Hân"
+            ],
+            "director": [
+                "Diệp Vỹ"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                },
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "sat-pha-lang-3-tham-lang-spl-3-paradox",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/e9352a44851329428546289d02ba92b6",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220425/12622_336f3c83/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-25T16:54:52.000Z"
+            },
+            "_id": "6266d25c489068f643a21eef",
+            "name": "Nữ Quyền",
+            "origin_name": "The Glorias",
+            "content": "<p>Câu chuyện về biểu tượng nữ quyền ảnh hưởng thời thơ ấu của Gloria Steinem đã ảnh hưởng lớn đến cuộc đời của cô với tư cách là một nhà văn, nhà hoạt động và nhà tổ chức cho quyền phụ nữ trên toàn thế giới.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/nu-quyen-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "nu-quyen",
+            "year": 2020,
+            "actor": [
+                "Julianne Moore",
+                " Alicia Vikander",
+                " Ryan Kiera Armstrong"
+            ],
+            "director": [
+                "Julie Taymor"
+            ],
+            "category": [
+                {
+                    "name": "Chiến Tranh"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "nu-quyen-the-glorias",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/ac4c0c5d6b6b20ce69643ff104689db0",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220425/12621_42fbc273/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-25T16:51:57.000Z"
+            },
+            "_id": "6266d1ad489068f643a21e09",
+            "name": "Mật Vụ Kingsman",
+            "origin_name": "Kingsman: The Secret Service",
+            "content": "<p>Mật Vụ Kingsman là bộ phim hài hành động Mỹ 2015 của đạo diễn Matthew Vaughn. kể về một tổ chức điệp viên cực kỳ bí mật trong quá trình tuyển mộ Eggs một đứa trẻ đường phố không có học thức gì nhưng cực thông minh và có tố chất trở thành một điệp viên công nghệ cao, một người có triển vọng vào chương trình đào tạo điệp viên vô cùng khắc nghiệt nhằm đối phó với các hiểm họa toàn cầu phần tử khủng bố là thiên tài công nghệ biến chất. Vũ khi tối tân vs tài diễn xuất đỉnh cao, bộ phim đem lại những hình ảnh đẹp mắt, những pha hành động gây cấn đến nghẹt thở.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/mat-vu-kingsman-kingsman-the-secret-service-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "mat-vu-kingsman-kingsman-the-secret-service",
+            "year": 2015,
+            "actor": [
+                "Samuel L. Jackson",
+                " Colin Firth",
+                " Mark Hamill"
+            ],
+            "director": [
+                "Matthew Vaughn"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                },
+                {
+                    "name": "Anh"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "mat-vu-kingsman-kingsman",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/7e62803da514f1a8bd1437eb1b79c040",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220425/12617_54b8a393/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-24T16:10:31.000Z"
+            },
+            "_id": "62657677489068f643a1178b",
+            "name": "Thợ Săn Kẻ Giết Người",
+            "origin_name": "Hunter Hunter",
+            "content": "<p>Joseph Mersault (Sawa), vợ Anne (Sullivan) và con gái Renee (Howell) sống ở vùng hoang dã hẻo lánh của Canada, kiếm được ít lợi nhuận bằng nghề đánh bẫy lông thú. Joseph huấn luyện Renee háo hức cách làm mồi và bẫy các loài động vật khác nhau, trong khi Anne ở nhà và chăm sóc cabin, giặt quần áo và lấy nước. Sự yên tĩnh của họ bị đe dọa khi một con sói nguy hiểm bắt đầu ăn những con vật bị mắc kẹt dọc theo đường lông của họ. Bất chấp sự phản đối của Anne, Joseph rời khỏi căn nhà gỗ để theo dõi con sói và loại bỏ mối đe dọa. Sau một ngày dài trong vùng hoang dã theo dõi con sói với Renee, Joseph tìm thấy dấu vết mới và gửi con gái của mình trở về nhà vì lo lắng cho sự an toàn của cô bé. Tuy nhiên, Joseph vẫn tiếp tục săn con sói một mình. Cuối cùng anh tình cờ gặp một nhóm phụ nữ trẻ đã chết – bị tàn sát dã man, khỏa thân và sắp xếp trong một vòng tròn nghi lễ.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/tho-san-ke-giet-nguoi-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Thuyết Minh",
+            "notify": "",
+            "showtimes": "",
+            "slug": "tho-san-ke-giet-nguoi",
+            "year": 2020,
+            "actor": [
+                "Camille Sullivan",
+                " Summer H. Howell",
+                " Devon Sawa"
+            ],
+            "director": [
+                "Shawn Linden"
+            ],
+            "category": [
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                },
+                {
+                    "name": "Canada"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "tho-san-ke-giet-nguoi-thuyet-minh-hunter-hunter",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/422e42d058a41c75062760d7d640debf",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220424/12215_e0d67525/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-24T16:07:33.000Z"
+            },
+            "_id": "626575c5489068f643a11657",
+            "name": "Robot Đại Chiến: Bumblebee",
+            "origin_name": "Bumblebee",
+            "content": "<p>Chuyện phim lấy bối cảnh vào năm 1987, khi chú “robot ong nghệ” Bumblebee đang tìm nơi ẩn náu tại một bãi rác ở thị trấn thuộc bờ biển ở California, Mỹ. Cô bạn Charlie, khi đó đang sắp sang 18 tuổi đã tình cờ phát hiện được Bumblebee trong tình trạng bị hư hại và vỡ thành nhiều mảnh sau khi đánh nhau và họ đã có một cuộc phiêu lưu thú vị sau đó.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/robot-dai-chien-bumblebee-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "robot-dai-chien-bumblebee",
+            "year": 2018,
+            "actor": [
+                "Hailee Steinfeld",
+                " Jorge Lendeborg Jr.",
+                " John Cena"
+            ],
+            "director": [
+                "Travis Knight"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Tình Cảm"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "robot-dai-chien-bumblebee-bumblebee",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/747e32ab0fea7fbd2ad9ec03daa3f840",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220424/12209_ae6b7634/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-24T15:59:37.000Z"
+            },
+            "_id": "626573e9489068f643a1145f",
+            "name": "Chiến Trường",
+            "origin_name": "Battleground",
+            "content": "<p>Sáu tên cướp ngân hàng đang trên đường trốn chạy và bị mắc kẹt trong 1 khu rừng. Để tìm cách thoát khỏi khu rừng, họ đã bắt và giết tất cả mọi người khi đi vào rừng nhằm đe dọa không cho cảnh sát vào. Thật không may cho họ, Hugh Lambe là một cựu chiến binh sống ẩn mình trong rừng. Và mọi chuyện bắt đầu khi sáu tên cướp này muốn giết Hugh Lambe, và ông phải đối phó với 6 tên cướp này ra sao? Với kinh nghiệm của một lính thủy đánh bộ đã về hưu…</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/chien-truong-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "chien-truong",
+            "year": 2012,
+            "actor": [
+                "Bryan Larkin",
+                " Hugh Lambe",
+                " Bob Cymbalski"
+            ],
+            "director": [
+                "Neil Mackay"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Canada"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "chien-truong-battleground",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/835bafd2c534a1830c0590774285ff88",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220424/12194_06cddcd5/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-23T12:48:09.000Z"
+            },
+            "_id": "6263f589db43524328b13a2e",
+            "name": "Tinh Võ Môn",
+            "origin_name": "Fist of Fury",
+            "content": "<p>Tinh Võ Môn là môn phái võ chính thống dạy các môn đồ cách củng cố tâm hồn và thể xác cùa mình qua từng thế võ hơn là để đánh bại đối phương. Các thế đòn khi thủ khi công, thoắt ẩn thoắt hiện. Khi nhắc tới Tinh Võ Môn không thể không nói về võ sư trung hoa Quách Nguyên Giáp, người đã sáng lập ra trường phái võ này. Nhưng Quách Nguyên Giáp viên tịch bất ngờ khiế[CENTER]n môn đồ rằng phải đón nhận một tin sốc. Theo bác sĩ chẩn đoán, bệnh viêm phổi đã hành hạ sức khoẻ vốn đã bị tuổi già phần nào cướp đi sự cường tráng mạnh mẽ. Nhưng các đồ đệ trung thành của ông thì không thể nào tin vào lập luận đó; nhất là Trần Chân, một trong những môn đồ tài hoa nhất mà Quách Nguyên Giáp rèn giũa được. Trong ngày đưa tiễn thầy về cõi âm, các sư huynh tiểu muội cùng Trần Chân phải nén mọi cơn phẫn uất khi một tên đại diện cho môn phái Hưng Kiều do thủ lĩnh Nhật Kiroshi Suzuki cầm đầu vào mỉa mai châm chọc. Với mong muốn vong linh thầy không bị quấy rầy trong ngày đưa tiễn, nhóm anh em nuốt hận trong lòng. Tuy nhiên, Trần Chân vẫn nuôi mối hoài nghi về sự ra đi đột ngột của thầy và một mình xông thẳng vào võ đường Hưng Kiều để hỏi tội... Hậu quả của sự nóng giận này là các huynh đệ của Trần Chân bị đe dọa tính mạng và vong linh thầy không được yên ổn…</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/tinh-vo-mon-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "tinh-vo-mon",
+            "year": 1972,
+            "actor": [
+                "Lý Tiểu Long",
+                " Nora Miao",
+                " James Tien"
+            ],
+            "director": [
+                "Wei Lo"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Tình Cảm"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "tinh-vo-mon-fist-of-fury",
+                        "link_embed": "https://kd.hd-bophim.com/share/0b4078ee99ffc88fb383ffcdcd377d67",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220423/9493_a6697cbb/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-23T12:45:46.000Z"
+            },
+            "_id": "6263f4fadb43524328b139b8",
+            "name": "Quan Vân Trường",
+            "origin_name": "The Lost Bladesman",
+            "content": "<p>Quan Vân Trường là câu chuyện kể về những ngày tháng “thân tại doanh Tào lòng ở Hán” của Quan Vũ, về cuộc hành trình hộ tống Qi Lan (Tôn Lệ) – vợ của Lưu Bị (Phương Trung Tín) ra khỏi vòng kiềm tỏa của Tào Tháo (Khương Văn), giữ trọn đạo làm tôi và đạo làm tiểu đệ. Trong cuộc hành trình ấy, Quan Vũ đã phải vượt qua biết bao hiểm nguy, cạm bẫy. Khi thì là những lời ngon ngọt dụ dỗ, vàng bạc châu báu... Mà Tào Tháo dùng để mua chuộc Quan Vũ, khi thì là những cuộc giao đấu quyết liệt để phá vòng vây quân Ngụy... Nhưng thử thách càng nhiều thì tấm lòng trung thành dũng cảm của Quan Vân Trường lại càng sáng ngời và đáng quý.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/quan-van-truong-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "quan-van-truong",
+            "year": 2011,
+            "actor": [
+                "Donnie Yen",
+                " Wen Jiang",
+                " Betty Sun"
+            ],
+            "director": [
+                "Felix Chong",
+                " Alan Mak"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Cổ Trang"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                },
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "quan-van-truong-the-lost-bladesman",
+                        "link_embed": "https://kd.hd-bophim.com/share/2287c6b8641dd2d21ab050eb9ff795f3",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220423/9487_f112916c/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-23T12:45:46.000Z"
+            },
+            "_id": "6263f4fadb43524328b139b8",
+            "name": "Quan Vân Trường",
+            "origin_name": "The Lost Bladesman",
+            "content": "<p>Quan Vân Trường là câu chuyện kể về những ngày tháng “thân tại doanh Tào lòng ở Hán” của Quan Vũ, về cuộc hành trình hộ tống Qi Lan (Tôn Lệ) – vợ của Lưu Bị (Phương Trung Tín) ra khỏi vòng kiềm tỏa của Tào Tháo (Khương Văn), giữ trọn đạo làm tôi và đạo làm tiểu đệ. Trong cuộc hành trình ấy, Quan Vũ đã phải vượt qua biết bao hiểm nguy, cạm bẫy. Khi thì là những lời ngon ngọt dụ dỗ, vàng bạc châu báu... Mà Tào Tháo dùng để mua chuộc Quan Vũ, khi thì là những cuộc giao đấu quyết liệt để phá vòng vây quân Ngụy... Nhưng thử thách càng nhiều thì tấm lòng trung thành dũng cảm của Quan Vân Trường lại càng sáng ngời và đáng quý.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/quan-van-truong-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "quan-van-truong",
+            "year": 2011,
+            "actor": [
+                "Donnie Yen",
+                " Wen Jiang",
+                " Betty Sun"
+            ],
+            "director": [
+                "Felix Chong",
+                " Alan Mak"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Cổ Trang"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                },
+                {
+                    "name": "Hồng Kông"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "quan-van-truong-the-lost-bladesman",
+                        "link_embed": "https://kd.hd-bophim.com/share/2287c6b8641dd2d21ab050eb9ff795f3",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220423/9487_f112916c/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-22T17:59:59.000Z"
+            },
+            "_id": "6262ed1fdb43524328b0feb9",
+            "name": "Quái Vật Săn Đêm",
+            "origin_name": "Sputnik",
+            "content": "<p>Quái Vật Săn Đêm người sống sót đơn độc trong một sự cố tàu vũ trụ bí ẩn đã không trở về nhà một mình - ẩn trong cơ thể anh ta là một sinh vật nguy hiểm.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/quai-vat-san-dem-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "quai-vat-san-dem",
+            "year": 2020,
+            "actor": [
+                "Oksana Akinshina",
+                " Fedor Bondarchuk",
+                " Pyotr Fyodorov"
+            ],
+            "director": [
+                "Egor Abramenko"
+            ],
+            "category": [
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Khoa Học"
+                },
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Nga"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "quai-vat-san-dem-sputnik",
+                        "link_embed": "https://kd.hd-bophim.com/share/6fc3f254b4f9c09c037e3ee7b40f5309",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220422/9332_36b4e0fc/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-22T17:52:34.000Z"
+            },
+            "_id": "6262eb62db43524328b0fca6",
+            "name": "Đồi Tuyết Máu",
+            "origin_name": "Let It Snow",
+            "content": "<p>Đồi Tuyết Máu kể về chuyến du lịch chết người của cô gái Mia và chồng sắp cưới. Trượt tuyết bất chấp lời can ngăn, cả hai không may lạc nhau rồi phải xoay xở sống sót giữa thời tiết khắc nghiệt. Còn xui xẻo hơn khi Mia rơi vào tầm ngắm một tên sát nhân có sở thích giết người mua vui rồi vùi xác họ dưới nền lạnh</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/doi-tuyet-mau-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "doi-tuyet-mau",
+            "year": 2020,
+            "actor": [
+                "Ivanna Sakhno",
+                " Mariam Sulakadze",
+                " Olga Sulzhenko"
+            ],
+            "director": [
+                "Stanislav Kapralov"
+            ],
+            "category": [
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "doi-tuyet-mau-let-it-snow",
+                        "link_embed": "https://kd.hd-bophim.com/share/7b780be82755701ccc69c82a3e656375",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220422/9321_b340ea5f/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-22T17:50:49.000Z"
+            },
+            "_id": "6262eaf9db43524328b0fc26",
+            "name": "Chúa Tể Của Chiếc Nhẫn: Sự Trở về của Nhà Vua",
+            "origin_name": "The Lord of the Rings: The Return of the King",
+            "content": "<p>Vương quốc một thời hưng thịnh nhất hơn bao giờ hết cần một vị vua tài giỏi lên lãnh đạo. Nhưng liệu Aragorn có đáp lời dòng máu tổ tiên đang chảy trong huyết quản và tiếp nhận vị trí dành cho anh ngay từ khi mới sinh ra?</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/chua-te-cua-chiec-nhan-su-tro-ve-cua-nha-vua-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "chua-te-cua-chiec-nhan-su-tro-ve-cua-nha-vua",
+            "year": 2003,
+            "actor": [
+                "Elijah Wood",
+                " Viggo Mortensen",
+                " Ian McKellen"
+            ],
+            "director": [
+                "Peter Jackson"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                },
+                {
+                    "name": "Kinh Dị"
+                },
+                {
+                    "name": "Bí ẩn"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "chua-te-cua-chiec-nhan-su-tro-ve-cua-nha-vua-the-lord-of-the-rings-the-return-of-the-king",
+                        "link_embed": "https://kd.hd-bophim.com/share/1319c26b37ea5c6413750b06f30f6b6a",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220422/9317_49472570/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-19T11:08:04.000Z"
+            },
+            "_id": "625e9814db43524328af1efa",
+            "name": "Quái Vật Vũ Trụ",
+            "origin_name": "Starship Troopers: Invasion",
+            "content": "<p>Người lính trẻ Johhny Rico phải cùng đồng đội chống lại những sinh vật ngoài hành tinh để bảo vệ sự sống còn của Trái Đất...</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/quai-vat-vu-tru-2012-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "quai-vat-vu-tru-2012",
+            "year": 2012,
+            "actor": [
+                "Luci Christian",
+                " David Matranga",
+                " Justin Doran"
+            ],
+            "director": [
+                "Shinji Aramaki"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "quai-vat-vu-tru-starship-troopers-invasion",
+                        "link_embed": "https://kd.hd-bophim.com/share/171ae1bbb81475eb96287dd78565b38b",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220419/8782_ccdf3e40/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-18T15:44:04.000Z"
+            },
+            "_id": "625d8744db43524328aedc4a",
+            "name": "Robot Đại Chiến 2: Bại Binh Phục Hận",
+            "origin_name": "Transformers: Revenge of the Fallen",
+            "content": "<p>Robot Đại Chiến 2: Bại Binh Phục Hận - Transformers: Revenge of The Fallen 2009 là một bộ phim hành động khoa học viễn tưởng trong loạt series phim Transformers của đạo diễn Michael Bay. Hai năm sau khi Sam Witwicky (Shia LaBeouf và những người bạn Autobot cứu Trái Đất khỏi tay của bọn Decepticons, ông phải đối mặt với một trận chiến mới. Trong khi đó, Optimus Prime và Autobots đang làm việc với một tổ chức quân sự bí mật để làm một ngôi nhà trên Trái Đất. Một Deceopticon cổ đại, The Fallen được triệu hồi đến để trả thù. Lúc này Sam và bạn gái Mikaela phải tìm ra nguồn gốc của Transformers trên Trái Đất và thấy một tia hi vọng có thể đánh bại The Fallen.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/robot-dai-chien-2-bai-binh-phuc-han-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "robot-dai-chien-2-bai-binh-phuc-han",
+            "year": 2009,
+            "actor": [
+                "Shia LaBeouf",
+                " Megan Fox",
+                " Josh Duhamel"
+            ],
+            "director": [
+                "Michael Bay"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "robot-dai-chien-2-bai-binh-phuc-han-transformers-revenge-of-the-fallen",
+                        "link_embed": "https://kd.hd-bophim.com/share/73741ea570def1d114a9ac9bb6726916",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220418/8599_5357faf2/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-18T15:44:25.000Z"
+            },
+            "_id": "625d8759db43524328aedc6d",
+            "name": "Robot Đại Chiến 3: Bóng Tối Mặt Trăng",
+            "origin_name": "Transformers: Dark of the Moon",
+            "content": "<p>Robot Đại Chiến 3 - Bóng tối mặt trăng - Transformers: Dark of The Moon 2011 là một bộ phim hành động khoa học viễn tưởng trong loạt series phim Transformers của đạo diễn Michael Bay. San Witwicky (Shia LaBeouf) và cô bạn gái mới Carly (Roise Huntington-Whiteley) tham gia vào cuộc xung đột khi Deceptions xấu xa làm mới một cuộc chiến tranh lâu dài chống lại Autobots. Optimus Prime (Peter Cullen) tin rằng một khi hồi sinh kẻ lãnh đạo Autobots, Transformers Sentinel Prime (Leonard Nimoy) có thể giành được chiến thắng. Tuy nhiên, quyết định đó dẫn tới một hậu quả nghiêm trọng - 1 trận chiến gay cấn ở Chicago.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/robot-dai-chien-3-bong-toi-mat-trang-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "robot-dai-chien-3-bong-toi-mat-trang",
+            "year": 2011,
+            "actor": [
+                "Shia LaBeouf",
+                " Rosie Huntington-Whiteley",
+                " Tyrese Gibson"
+            ],
+            "director": [
+                "Michael Bay"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Hình Sự"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "robot-dai-chien-3-bong-toi-mat-trang-transformers-dark-of-the-moon",
+                        "link_embed": "https://kd.hd-bophim.com/share/ce840aa9583592e71f3db26ee6e41703",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220418/8600_f4625b64/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-18T15:41:14.000Z"
+            },
+            "_id": "625d869adb43524328aedb9c",
+            "name": "Người Đẹp Và Quái Vật",
+            "origin_name": "Beauty And The Beast",
+            "content": "<p>Phim Người Đẹp Và Quái Vật - Beauty And The Beast 2017: Chuyển thể từ truyện cổ Grimm nổi tiếng, câu chuyện tình lãng mạn giữa một cô gái vùng quê và vị hoàng tử bị dính lời nguyền trở thành quái vật. Vì quá ích kỷ, chàng hoàng tử bị biến thành quái vật, sống trong tòa lâu đài cùng những đồ vật biết nói. Chỉ đến khi nào một cô gái thật lòng yêu, chàng mới trở lại thành người. Nhiều năm đã trôi qua, khi Quái vật gần như tuyệt vọng thì cô gái thông minh Belle xuất hiện.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/nguoi-dep-va-quai-vat-2017-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "nguoi-dep-va-quai-vat-2017",
+            "year": 2017,
+            "actor": [
+                "Emma Watson",
+                " Dan Stevens",
+                " Luke Evans"
+            ],
+            "director": [
+                "Bill Condon"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Tình Cảm"
+                },
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                },
+                {
+                    "name": "Gia Đình"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                },
+                {
+                    "name": "Anh"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "nguoi-dep-va-quai-vat-beauty-and-the-beast",
+                        "link_embed": "https://kd.hd-bophim.com/share/cd6b73b67c77edeaff94e24b961119dd",
+                        "link_m3u8": "https://kd.hd-bophim.com/20220418/8591_edf1b62d/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-17T15:50:29.000Z"
+            },
+            "_id": "625c3745941a26e421dc5456",
+            "name": "Siêu Anh Hùng Shazam",
+            "origin_name": "Shazam!",
+            "content": "<p>Tất cả chúng ta đều là người hùng, vấn đề ở chỗ chúng ta phải biết cách phát huy năng lực của mình. Trong trường hợp của Bill Batson (Angel), với sự giúp đỡ của một phù thủy cổ xưa, chỉ cần nói lớn từ “Shazam” là đứa trẻ 14 tuổi này có thể biến thành siêu anh hùng Shazam trưởng thành (Levi). Nhưng bên trong thân hình như một vị thần đó vẫn là trái tim của một đứa trẻ.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/sieu-anh-hung-shazam-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "sieu-anh-hung-shazam",
+            "year": 2019,
+            "actor": [
+                "Zachary Levi",
+                " Asher Angel",
+                " Jack Dylan Grazer"
+            ],
+            "director": [
+                "David F. Sandberg"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "sieu-anh-hung-shazam-shazam",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/8eb51d0a68e9373df41f88e5b551d4a3",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220417/10997_28528134/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-17T15:08:46.000Z"
+            },
+            "_id": "625c2d7e941a26e421dc4e64",
+            "name": "Đám Cưới Đen",
+            "origin_name": "Dark Spell",
+            "content": "<p>Nội dung phim xoay quanh câu chuyện của tên Zhenya, một cô gái đau khổ vì tình yêu với người chồng đã bỏ mình nên cô quyết định mang anh ta trở lại. Trong sự tuyệt vọng, cô gái đã sử dụng một câu thần chú gọi là \"Đám cưới đen\", một nghi lễ ma thuật nổi tiếng với sức mạnh to lớn và không thể đảo ngược. Sau nghi lễ, người chồng yêu dấu của cô trở lại, mặc dù tình yêu của anh trở nên giống như một nỗi ám ảnh: anh thậm chí sẵn sàng giết Zhenya, để không trao cô cho bất cứ ai.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/dam-cuoi-den-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "dam-cuoi-den",
+            "year": 2021,
+            "actor": [
+                "aYana Yenzhayev",
+                " Konstantin Beloshapka",
+                " Ilya Yermolo"
+            ],
+            "director": [
+                "Svyatoslav Podgaevskiy"
+            ],
+            "category": [
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Nga"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "dam-cuoi-den-dark-spell",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/b1c14790bce31f481f50e49de3542a85",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220417/10973_7a5981c5/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-17T15:05:31.000Z"
+            },
+            "_id": "625c2cbb941a26e421dc4e04",
+            "name": "Cuộc Chiến Tương Lai",
+            "origin_name": "The Tomorrow War",
+            "content": "<p>Bộ phim xoay quanh câu chuyện viễn cảnh thế giới vào năm 2051, các nhà khoa học đến từ tương lai đã có một chuyến du hành đến trái đất vào những năm hiện tại. Vì trái đất sẽ bị bị các sinh vật ngoài hành tinh xâm chiếm. Các chiến binh phải dóc hết sức để chuẩn bị cho cuộc chiến sống còn của thế giới, của toàn nhân loại.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/cuoc-chien-tuong-lai-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "cuoc-chien-tuong-lai",
+            "year": 2021,
+            "actor": [
+                "Chris Pratt",
+                " Yvonne Strahovski",
+                " J.K. Simmons"
+            ],
+            "director": [
+                "Chris McKay"
+            ],
+            "category": [
+                {
+                    "name": "Hành Động"
+                },
+                {
+                    "name": "Viễn Tưởng"
+                },
+                {
+                    "name": "Phiêu Lưu"
+                },
+                {
+                    "name": "Khoa Học"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Âu Mỹ"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "cuoc-chien-tuong-lai-the-tomorrow-war",
+                        "link_embed": "https://aa.nguonphimmoi.com/share/51a93b1b7421fc7ca001d7793eadb53b",
+                        "link_m3u8": "https://aa.nguonphimmoi.com/20220417/10970_f4208500/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-16T23:49:18.000Z"
+            },
+            "_id": "625b55fe941a26e421dc200c",
+            "name": "Võ Tòng Giết Tây Môn Khánh/Võ Tòng Trả Thù Cho Đại Lang",
+            "origin_name": "Wu Song VS Ximen Qing",
+            "content": "<p>PHIM Võ Tòng Giết Tây Môn Khánh/Võ Tòng Trả Thù Cho Đại Lang-Wu Song VS Ximen Qing (2021) [FULL HD-VIETSUB] : Tây Môn khánh và Văn Lãng chạm mặt nhau và cố gắng đưa Võ Tòng tới Nhật Bản. Khi Võ Tòng vội vã về nhà thì anh trai của anh ta là Đại Lang đã bị hạ sát. Võ Tòng không tin những lời thanh minh của Văn Lãng và quyết định điều tra nguyên nhân cái chết của anh trai mình, nhưng trên đường tìm kiếm tung tích anh ta đã bị một người dùng dây bạc tấn công.</p><p>Võ Tòng trói Anh Vũ và Chư Hiệu để đưa đến nha môn, cố gắng kết tội Tây Môn Khánh và Văn Lãng, nhưng nha môn đáp lại bằng một vài lời nói hời hợt và khép lại vụ án bằng một văn bản nguệch ngoạc.</p><p>Võ Tòng không thể nào chấp nhận được, anh ta đã chém Văn Lãng, và Vương Xương. Trong thủ phủ, Võ Tòng và Tây Môn Khánh đã xảy ra một cuộc chiến ác liệt, cuối cùng anh ta đã giết được Tây Môn Khánh và báo thù cho anh trai của mình.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/vo-tong-giet-tay-mon-khanhvo-tong-tra-thu-cho-dai-lang-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "67 phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "vo-tong-giet-tay-mon-khanhvo-tong-tra-thu-cho-dai-lang",
+            "year": 2021,
+            "actor": [
+                ""
+            ],
+            "director": [
+                "Hoàng Tư"
+            ],
+            "category": [
+                {
+                    "name": "Tâm Lý"
+                },
+                {
+                    "name": "Chiến Tranh"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Võ Tòng Giết Tây Môn Khánh - Võ Tòng Trả Thù Cho Đại Lang - Phim Cổ Trang_Hành Động",
+                        "link_embed": "https://vie.haiphim.com/share/1192265fb31ab52a6332c561ee6e5258",
+                        "link_m3u8": "https://vie.haiphim.com/20220401/4020_669fcd2c/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-16T23:47:50.000Z"
+            },
+            "_id": "625b55a6941a26e421dc1ff4",
+            "name": "Tướng Quân Tại Thượng - Người Tình Vượt Thời Gian",
+            "origin_name": "Oh My General - Love Across Time",
+            "content": "<p><strong>Tướng quân tại thượng: Người tình vượt thời gian - Oh My General: Love Across Time</strong> là bộ truyện tranh thuộc thể loại tâm lý, tình cảm, chính kịch, giả tưởng của Trung Quốc. Tác phẩm do đạo diễn Ye Tian chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Wang Churan và Li Jiulin.</p><p>Để bảo vệ nhà Tống, Liu Xiyin đã kích động vào cuộc xung đột dân sự ở Xiaxia bằng sắc đẹp và trí tuệ của mình, sau đó đã uống rượu có độc cùng cỏ bất tử với một chiếc chén vàng.</p><p>Sau đó cô đã chuyển đến một thế giới khác. Tại thế giới này, Liu Xiyin đã gặp một người tên là Diệp Chiêu, ở thế giới của thời Bắc Tống, chân tâm không thể nào đáp trả, và trên thế giới này, sự si mê của Liu Xiyin sẽ đi về đâu.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/tuong-quan-tai-thuong-nguoi-tinh-vuot-thoi-gian-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "https://youtu.be/vy1qholEkpE",
+            "time": "72 phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "tuong-quan-tai-thuong-nguoi-tinh-vuot-thoi-gian",
+            "year": 2022,
+            "actor": [
+                ""
+            ],
+            "director": [
+                "Ye Tian"
+            ],
+            "category": [
+                {
+                    "name": "Cổ Trang"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Tướng Quân Tại Thượng- Người Tình Vượt Thời Gian - Mối Tình Ngàn Năm Liệu Có Cái Kết Đẹp-",
+                        "link_embed": "https://vie.haiphim.com/share/455cb2657aaa59e32fad80cb0b65b9dc",
+                        "link_m3u8": "https://vie.haiphim.com/20220401/4018_d5e5d022/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-17T11:14:08.000Z"
+            },
+            "_id": "625b5558941a26e421dc1fdc",
+            "name": "Truyền Thuyết Lâu Lan: Đội Quân U Linh",
+            "origin_name": "The Legend Of Loulan: Ghost Army",
+            "content": "<p><strong>Truyền thuyết lâu lan: Đội quân u linh - The Legend of Loulan: Ghost Army</strong> là bộ phim thuộc thể loại hành động, phiêu lưu, giả tưởng của Trung Quốc. Tác phẩm do Liu Xuan Di chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Liu Chang, Zaimire, Wa Er, Fu He Anqi, Ke Guoqing và Kunlun.</p><p>Wu Tian vốn là một nhà khảo cổ học đầy nhiệt huyết và chính nghĩa, đã phát hiện ra một chiếc gương đồng tráng men của các di tích văn hoá Lâu Lan trong sa mạc. Kho báu để ngăn nó rơi vào tay kẻ ngoại bang và những kẻ trộm mộ, cả hai đã tới lăng mộ của thiên vương trong lăng mộ Lâu Lan, để khám phá bí mật về đội quân u linh bí ẩn ngàn năm tuổi, và có một cuộc phiêu lưu chiến đấu dũng cảm ở Lâu Lan.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/ruyen-thuyet-lau-lan-doi-quan-u-linh-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "",
+            "time": "69 phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "truyen-thuyet-lau-lan-doi-quan-u-linh",
+            "year": 2021,
+            "actor": [
+                ""
+            ],
+            "director": [
+                "Liu Xuan Di"
+            ],
+            "category": [
+                {
+                    "name": "Cổ Trang"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Truyền Thuyết Lâu Lan- Đội Quân U Linh - Phim Hành Động_Phiêu Lưu",
+                        "link_embed": "https://vie.haiphim.com/share/621c090c3a61c6809130675a63897a0f",
+                        "link_m3u8": "https://vie.haiphim.com/20220401/4017_e1b5d275/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "status": true,
+        "msg": "",
+        "movie": {
+            "modified": {
+                "time": "2022-04-16T23:26:43.000Z"
+            },
+            "_id": "625b50b3941a26e421dc1efb",
+            "name": "Thuỷ Quái Rừng Gỗ Mun",
+            "origin_name": "Water Monster 2",
+            "content": "<p><strong>Thuỷ Quái Rừng Gỗ Mun - Water Monster 2 </strong>là bộ phim thuộc thể loại hành động, kinh dị, viễn tưởng của Trung Quốc. Tác phẩm do đạo diễn Hạng Thu Lương và Hạng Hà Sinh chịu trách nhiệm chỉ đạo, với sự tham gia của các diễn viên Vương Chân Nhi, Hàn Đông, Lưu Lâm Thành, Nguy Tử Kỳ, Vương Kiến Quốc và Ngô Thành Chí.</p><p>Mở đầu bộ phim là lời tường thuật dưới góc nhìn của nữ chính Thanh Linh, một bác sĩ pháp y của Trung Hoa Dân Quốc quay lại thị trấn Thượng Thuỷ, nơi cô từng sinh sống để tìm tung tích của em trai mình.</p><p>Khi tới nơi, cô nhận thấy nhiều điều bất thường như xác súc vật bên đường ruồi nhặng bu kín, người dân đang tổ chức các nghi lễ quái đản để thờ cúng khỉ nước, cô có cảm giác ai đó đang theo dõi mình. Đáng sợ nhất là nơi cô từng sinh sống, nhìn bên ngoài không khác gì ngôi nhà gỗ thông thường, nhưng vào bên trong mọi thứ khác hoàn toàn.</p><p>Các bức tường xung quanh bị dây leo chằng chịt. Nhìn kỹ hoá ra là một ngôi nhà dựng ở trên cây, sự tối tăm và ẩm thấp bao trùm. Thực ra còn có một căn phòng bí mật, phía sau nó là rừng cây và các vật phẩm cúng tế được đặt ở đó.</p><p>Những điều kỳ lạ liên tiếp xảy ra, với sự xuất hiện của Thanh Linh, mọi người ở thị trấn Thượng Thuỷ đều gặp nguy hiểm, cô đi khắp nơi để tìm kiếm tung tích của em trai mình, nhưng càng tìm kiếm thì càng phát hiện ra nhiều điều đáng ngờ ở thị trấn này.</p><p>Vấn đề lớn nhất là nhiều người bí mật giúp đỡ Thanh Linh, người bán thịt đã đưa cho anh trai của Thanh Linh một chiếc máy ảnh, nhưng anh ta không muốn vợ chồng bị giết trong bể cá vào hôm sau. Người vợ câm của chủ cửa hàng nói với anh trai của Thanh Linh rằng thi thể của họ được tìm thấy trong rừng.</p><p>Tất cả những người có quan hệ với Thanh Linh đều bị sát hại. Thông qua những cuộc thăm hỏi và điều tra liên tục, Thanh Linh cuối cùng đã tìm ra sự thật và sử dụng trí tuệ của mình để xóa bỏ hủ tục mê tín bằng nền văn minh khoa học, dùng sự thật thức tỉnh người dân thị trấn, chống lại thế lực xấu xa, chính là kẻ sát nhân đứng đằng sau tất cả mọi việc.</p>",
+            "type": "single",
+            "status": "completed",
+            "thumb_url": "https://img.ophim.tv/uploads/movies/thuy-quai-rung-go-mun-thumb.jpg",
+            "is_copyright": "off",
+            "sub_docquyen": "off",
+            "trailer_url": "https://youtu.be/60rZRz9D1rc",
+            "time": "84 phút",
+            "episode_current": "Full",
+            "episode_total": "1",
+            "quality": "HD",
+            "lang": "Vietsub",
+            "notify": "",
+            "showtimes": "",
+            "slug": "thuy-quai-rung-go-mun",
+            "year": 2021,
+            "actor": [
+                ""
+            ],
+            "director": [
+                "Hạng Thu Lương"
+            ],
+            "category": [
+                {
+                    "name": "Kinh Dị"
+                }
+            ],
+            "country": [
+                {
+                    "name": "Trung Quốc"
+                }
+            ]
+        },
+        "episodes": [
+            {
+                "server_name": "Vietsub #1",
+                "server_data": [
+                    {
+                        "name": "Full",
+                        "slug": "full",
+                        "filename": "Thuỷ Quái Rừng Gỗ Mun - Khỉ Nước Quay Lại Báo Thù - Phim Kinh Dị Viễn Tưởng HOT 2021",
+                        "link_embed": "https://vie.haiphim.com/share/bd3ef5c19067fe179f71c8b86ea4b39b",
+                        "link_m3u8": "https://vie.haiphim.com/20220401/4012_ce9144bf/index.m3u8"
+                    }
+                ]
+            }
+        ]
+    }
+]

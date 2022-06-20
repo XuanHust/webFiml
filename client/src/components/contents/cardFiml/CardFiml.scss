@@ -1,0 +1,47 @@
+.cardPhim{
+    width: 100%;
+    cursor: pointer;
+    padding: 2px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    .cardphim-conent{
+        line-height: 1.6;
+        width: 100%;
+        .img{
+            width: 100%;
+            height: 320px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            margin-bottom: 10px;
+        }
+        .nametv{
+            font-size: 13px;
+            font-weight: 700;
+            color: rgb(221, 221, 9);
+            padding: 0 10px;
+        }
+        .nameta{
+            padding: 0 10px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .cardPhim{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .cardPhim{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .cardPhim{
+        width: 100%;
+    }
+}

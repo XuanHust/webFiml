@@ -1,0 +1,119 @@
+#container-header{
+    background-color: #1a1a1a;
+    border-bottom: 4px solid #ef5f06;
+    .header-content{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        .logo{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            p{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 5px;
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            h2{
+                color: rgb(120, 139, 11);
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            input{
+                background-color: #282828;
+                border: none;
+                outline: none;
+                padding: 10px;
+                width: 350px;
+                padding-left: 15px;
+                border-radius: 15px 0 0 15px;
+                color: rgb(125, 122, 122);
+                font-size: 16px;
+            }
+            li{
+                background-color: #282828;
+                height: 38px;
+                line-height: 38px;
+                padding: 0 15px;
+                border-radius: 0 15px 15px 0;
+                cursor: pointer;
+                transition: al 0.3s ease;
+                i{
+                    font-size: 16px;
+                    color: #ef5f06;
+                }
+            }
+            li:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px) {
+    #container-header{
+        .header-content{
+            width: 80%;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    #container-header{
+        background-color: #1a1a1a;
+        border-bottom: 4px solid #ef5f06;
+        .header-content{
+            width: 95%;
+        }
+    }
+}
+@media only screen and (max-width:480px) {
+    #container-header{
+        .header-content{
+            width: 98%;
+            .logo{
+                p{
+                    width: 35px;
+                    height: 35px;
+                }
+                h2{
+                    color: rgb(120, 139, 11);
+                    font-size: 17px;
+                }
+            }
+            .search{
+                input{
+                    background-color: #282828;
+                    padding: 10px;
+                    width: 200px;
+                    padding-left: 10px;
+                    font-size: 15px;
+                }
+                li{
+                    background-color: #282828;
+                    height: 38px;
+                    line-height: 38px;
+                    padding: 0 15px;
+                    border-radius: 0 15px 15px 0;
+                    cursor: pointer;
+                    transition: al 0.3s ease;
+                    i{
+                        font-size: 15px;
+                        color: #ef5f06;
+                    }
+                }
+            }
+        }
+    }
+}

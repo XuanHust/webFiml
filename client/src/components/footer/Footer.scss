@@ -1,0 +1,92 @@
+#container-footer{
+    background-color: #282828;
+    border-top: 4px solid #ef5f06;
+    .content-footer{
+        width: 60%;
+        margin: 0 auto;
+        padding: 60px 0;
+        .logo{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            p{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin-right: 5px;
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            h2{
+                color: rgb(120, 139, 11);
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+        .logo:hover{
+            opacity: 0.8;
+        }
+        .content{
+            text-align: center;
+            font-size: 17px;
+            color: rgb(122, 118, 118);
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #container-footer{
+        .content-footer{
+            width: 85%;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    #container-footer{
+        .content-footer{
+            width: 98%;
+            padding: 40px 0;
+            .logo{
+                margin-bottom: 15px;
+                p{
+                    width: 40px;
+                    height: 40px;
+                }
+                h2{
+                    color: rgb(120, 139, 11);
+                    font-size: 23px;
+                }
+            }
+            .content{
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:480px) {
+    #container-footer{
+        .content-footer{
+            width: 99%;
+            padding: 30px 0;
+            .logo{
+                margin-bottom: 10px;
+                p{
+                    width: 40px;
+                    height: 40px;
+                }
+                h2{
+                    color: rgb(120, 139, 11);
+                    font-size: 21px;
+                }
+            }
+            .content{
+                font-size: 13px;
+            }
+        }
+    }
+}
