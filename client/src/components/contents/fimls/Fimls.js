@@ -66,8 +66,8 @@ const SeriesFiml = (props) => {
     }, [props])
 
     return (
-        <div className='phimbo_container'>
-            <div className='phimbo-content'>
+        <div className='fimls_container'>
+            <div className='fimls-content'>
                 <div className='title'>
                     <i class="fa-solid fa-folder-open"></i>
                     <p>Phim Bộ</p>
@@ -123,7 +123,7 @@ const SeriesFiml = (props) => {
                         onClick={() => handleClick()}
                     >Lọc fiml</button>
                 </div>
-                <div className='phimboall'>
+                <div className='fimlsall'>
                     {
                         data && data.length ?
                             data.map((item, index) => {

@@ -1,8 +1,8 @@
-.phimbo_container{
+.fimls_container{
     background-color: #1a1a1a;
     width: 100%;
     padding: 10px 0;
-    .phimbo-content{
+    .fimls-content{
         border-top: 4px solid #ef5f06;
         width: 60%;
         margin: 0 auto;
@@ -53,7 +53,7 @@
                 opacity: 0.7;
             }
         }
-        .phimboall{
+        .fimlsall{
             padding-top: 10px;
             background-color: #1a1a1a;
             display: flex;
@@ -86,17 +86,17 @@
     }
 }
 @media only screen and (max-width: 1024px) {
-    .phimbo_container{
-        .phimbo-content{
+    .fimls_container{
+        .fimls-content{
             width: 85%;
         }
     }
 }
 @media only screen and (max-width:768px) {
-    .phimbo_container{
-        .phimbo-content{
+    .fimls_container{
+        .fimls-content{
             width: 95%;
-            .phimboall{
+            .fimlsall{
                 padding-top: 10px;
                 background-color: #1a1a1a;
                 display: flex;
@@ -110,8 +110,8 @@
     }
 }
 @media only screen and (max-width:480px) {
-    .phimbo_container{
-        .phimbo-content{
+    .fimls_container{
+        .fimls-content{
             width: 99%;
             .selector{
                 select{
@@ -123,7 +123,7 @@
                     font-size: 10px;
                 }
             }
-            .phimboall{
+            .fimlsall{
                 padding-top: 10px;
                 background-color: #1a1a1a;
                 display: flex;
