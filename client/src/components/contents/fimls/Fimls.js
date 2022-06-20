@@ -110,6 +110,9 @@ const SeriesFiml = (props) => {
                         <option>Tài Liệu</option>
                         <option>Phiêu Lưu</option>
                         <option>Chiến Tranh</option>
+                        <option>Viễn Tưởng</option>
+                        <option>Âm Nhạc</option>
+                        <option>Bí Ẩn</option>
                         <option>...</option>
                     </select>
                     <select onChange={(event) => handleNation(event)}>
@@ -119,6 +122,12 @@ const SeriesFiml = (props) => {
                         <option>Âu Mỹ</option>
                         <option>Anh</option>
                         <option>Pháp</option>
+                        <option>Hàn Quốc</option>
+                        <option>Ý</option>
+                        <option>Nga</option>
+                        <option>Hồng Kông</option>
+                        <option>Canada</option>
+                        <option>...</option>
                     </select>
                     <select onChange={(event) => handleYear(event)}>
                         <option>--Năm--</option>
@@ -133,6 +142,9 @@ const SeriesFiml = (props) => {
                         <option>2014</option>
                         <option>2013</option>
                         <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>...</option>
                     </select>
                     <button type='button'
                         onClick={() => handleClick()}
