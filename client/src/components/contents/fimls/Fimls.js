@@ -1,4 +1,4 @@
-import './SeriesFiml.scss'
+import './Fimls.scss'
 import CardFiml from '../cardFiml/CardFiml';
 import { useState, useEffect } from 'react';
 
@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 
 const SeriesFiml = (props) => {
+
+    console.log("type", props.fimlType)
 
     const [sort, setSort] = useState("--Sắp xếp--")
     const [category, setCategory] = useState("--Thể loại--")
@@ -53,7 +55,7 @@ const SeriesFiml = (props) => {
     }
 
     const getData = () => {
-        fetch('http://localhost:8080/seriesFiml')
+        fetch(`http://localhost:8080/${props.fimlType}`)
             .then(response => response.json())
             .then(response => setFiml(response))
             .catch(error => console.error(error))
@@ -61,7 +63,7 @@ const SeriesFiml = (props) => {
 
     useEffect(() => {
         getData();
-    }, [])
+    }, [props])
 
     return (
         <div className='phimbo_container'>

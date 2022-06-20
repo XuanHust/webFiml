@@ -5,10 +5,7 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import SeriesFiml from "../contents/seriesFiml/SeriesFiml";
-import OddFiml from "../contents/oddFiml/OddFiml";
-import Cartoon from "../contents/cartoon/Cartoon";
-import Show from "../contents/shows/Show";
+import Fimls from "../contents/fimls/Fimls";
 import Home from "../contents/home/Home";
 import "./Nav.scss"
 import FimlDetail from "../contents/fimlDetail/FimlDetail";
@@ -77,10 +74,10 @@ const Nav = (props) => {
             </div>
 
             <Routes>
-                <Route path="/danhsach/phimbo" element={<SeriesFiml />} />
-                <Route path="danhsach/phimle" element={<OddFiml />} />
-                <Route path="/danhsach/shows" element={<Show />} />
-                <Route path="/danhsach/hoathinh" element={<Cartoon />} />
+                <Route path="/danhsach/phimbo" element={<Fimls fimlType = "seriesFiml"/>} />
+                <Route path="danhsach/phimle" element={<Fimls fimlType = "oddFiml"/>} />
+                <Route path="/danhsach/shows" element={<Fimls fimlType = "shows"/>} />
+                <Route path="/danhsach/hoathinh" element={<Fimls fimlType = "cartoon"/>} />
                 <Route path="/MoviesTv" element={<Home />} />
                 {
                     totalFiml && totalFiml.length &&
