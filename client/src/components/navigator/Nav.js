@@ -74,8 +74,8 @@ const Nav = (props) => {
             </div>
 
             <Routes>
-                <Route path="/danhsach/phimbo" element={<Fimls fimlType = "seriesFiml"/>} />
-                <Route path="danhsach/phimle" element={<Fimls fimlType = "oddFiml"/>} />
+                <Route path="/danhsach/phimbo" element={<Fimls fimlType = "series"/>} />
+                <Route path="danhsach/phimle" element={<Fimls fimlType = "single"/>} />
                 <Route path="/danhsach/shows" element={<Fimls fimlType = "shows"/>} />
                 <Route path="/danhsach/hoathinh" element={<Fimls fimlType = "cartoon"/>} />
                 <Route path="/MoviesTv" element={<Home />} />

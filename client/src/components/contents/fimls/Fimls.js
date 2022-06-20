@@ -1,14 +1,14 @@
-import './Fimls.scss'
+import './Fimls.scss';
 import CardFiml from '../cardFiml/CardFiml';
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 import {
     Link
 } from "react-router-dom";
 
-const SeriesFiml = (props) => {
 
-    console.log("type", props.fimlType)
+const SeriesFiml = (props) => {
 
     const [sort, setSort] = useState("--Sắp xếp--")
     const [category, setCategory] = useState("--Thể loại--")
@@ -30,8 +30,23 @@ const SeriesFiml = (props) => {
         setYear(event.target.value)
     }
 
+    const handleFilter = async (filter) => {
+        const dataFilter = await axios.post('http://localhost:8080/filterFiml', filter);
+        const getFimls = async () => {
+            const getFiml = await fetch('http://localhost:8080/filterFiml/fimls');
+            const fiml = await getFiml.json();
+            setFiml(fiml);
+        }
+        getFimls();
+    }
     const handleClick = () => {
-
+        const filter = {
+            category: category,
+            nation: nation,
+            year: year,
+            type: props.fimlType,
+        }
+        handleFilter(filter);
     }
 
     const numberOfFiml = fiml.length

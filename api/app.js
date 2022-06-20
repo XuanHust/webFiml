@@ -8,17 +8,17 @@ var cors = require('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testApiRouter = require('./routes/testApi');
-var seriesFiml = require('./routes/seriesFiml');
-var oddFiml = require('./routes/oddFiml');
+var seriesFiml = require('./routes/series');
+var oddFiml = require('./routes/single');
 var shows = require('./routes/shows');
 var cartoon = require('./routes/cartoon');
 var totalFiml = require('./routes/totalFiml');
-// var {postData, data} = require('./routes/postData');
 var postData = require('./routes/postData')
 var actor = require('./routes/actor');
 var director = require('./routes/director');
 var category = require('./routes/category');
 var espisodes = require('./routes/espisodes');
+var filterFiml = require('./routes/filterFiml');
 
 
 var app = express();
@@ -37,17 +37,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/testApi", testApiRouter);
-app.use("/seriesFiml", seriesFiml);
-app.use("/oddFiml", oddFiml);
+app.use("/series", seriesFiml);
+app.use("/single", oddFiml);
 app.use("/shows", shows);
 app.use("/cartoon", cartoon);
 app.use("/totalFiml", totalFiml);
 app.use(postData);
-// app.use("/postData/actor", data);
 app.use("/actor", actor);
 app.use("/director", director);
 app.use("/category", category);
 app.use("/espisodes", espisodes);
+app.use(filterFiml);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

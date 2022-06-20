@@ -39,12 +39,12 @@ const Home = (props) => {
     ]
 
     const getData = () => {
-        fetch('http://localhost:8080/seriesFiml')
+        fetch('http://localhost:8080/series')
             .then(response => response.json())
             .then(response => setSeriesFiml(response))
             .catch(error => console.error(error))
 
-        fetch('http://localhost:8080/oddFiml')
+        fetch('http://localhost:8080/single')
             .then(response => response.json())
             .then(response => setOddFiml(response))
             .catch(error => console.error(error))
