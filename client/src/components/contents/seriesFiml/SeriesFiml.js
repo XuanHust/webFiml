@@ -1,5 +1,4 @@
 import './SeriesFiml.scss'
-import { connect } from 'react-redux';
 import CardFiml from '../cardFiml/CardFiml';
 import { useState, useEffect } from 'react';
 
@@ -14,7 +13,6 @@ const SeriesFiml = (props) => {
     const [nation, setNation] = useState("--Quốc gia--")
     const [year, setYear] = useState("--Năm--")
     const [fiml, setFiml] = useState([])
-    const [loadFiml, setLoadFiml] = useState()
     const [data, setData] = useState()
 
     const handleSort = (event) => {
@@ -29,37 +27,23 @@ const SeriesFiml = (props) => {
     const handleYear = (event) => {
         setYear(event.target.value)
     }
-    const handle = () => {
-        setFiml(props.dataRedux.seriesFiml.filter(
-            item =>
-                (nation === item.movie.country[0].name && year === `${item.movie.year}` && category === item.movie.category[0].name)
-        ))
-    }
 
     const handleClick = () => {
-        setFiml(props.dataRedux.seriesFiml)
-        nation !== "--Quốc gia--" && year !== "--Năm--" && category !== "--Thể loại--" ?
-            handle()
-            :
-            setFiml(props.dataRedux.seriesFiml.filter(
-                item => (nation === item.movie.country[0].name)
-                    || (year === `${item.movie.year}`)
-                    || (category === item.movie.category[0].name)
-            ))
+
     }
 
     const numberOfFiml = fiml.length
     const fimlOfPage = 12
     const numberOfPage = Math.ceil(numberOfFiml / fimlOfPage)
     let page = []
-    let  dataOfPage = []
+    let dataOfPage = []
     for (let i = 0; i < numberOfPage; i++) {
         page = [...page, i + 1]
     }
     const handlePage = (number) => {
         dataOfPage = []
-        let maxNumber = fimlOfPage*number
-        if(fimlOfPage*number > fiml.length){
+        let maxNumber = fimlOfPage * number
+        if (fimlOfPage * number > fiml.length) {
             maxNumber = fiml.length
         }
         for (let j = fimlOfPage * (number - 1); j < maxNumber; j++) {
@@ -68,11 +52,15 @@ const SeriesFiml = (props) => {
         setData(dataOfPage)
     }
 
-    useEffect(() => {
+    const getData = () => {
         fetch('http://localhost:8080/seriesFiml')
-        .then(response => response.json())
-        .then(response => setFiml(response))
-        .catch(error => console.error(error))
+            .then(response => response.json())
+            .then(response => setFiml(response))
+            .catch(error => console.error(error))
+    }
+
+    useEffect(() => {
+        getData();
     }, [])
 
     return (
@@ -136,23 +124,23 @@ const SeriesFiml = (props) => {
                 <div className='phimboall'>
                     {
                         data && data.length ?
-                        data.map((item, index) => {
-                            return (
-                                <Link to={"/" + item.slug}>
-                                    <CardFiml itemPhim={item} key={index} />
-                                </Link>
-                            )
-                        })
-                        :
-                        fiml.map((item, index) => {
-                            if(index < 12){
+                            data.map((item, index) => {
                                 return (
                                     <Link to={"/" + item.slug}>
                                         <CardFiml itemPhim={item} key={index} />
                                     </Link>
                                 )
-                            }
-                        })
+                            })
+                            :
+                            fiml.map((item, index) => {
+                                if (index < 12) {
+                                    return (
+                                        <Link to={"/" + item.slug}>
+                                            <CardFiml itemPhim={item} key={index} />
+                                        </Link>
+                                    )
+                                }
+                            })
                     }
                 </div>
                 <div className='pagination'>
@@ -172,12 +160,4 @@ const SeriesFiml = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-
-export default connect(mapStateToProps)(SeriesFiml);
+export default SeriesFiml;

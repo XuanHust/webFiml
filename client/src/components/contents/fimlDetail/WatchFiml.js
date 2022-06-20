@@ -1,5 +1,4 @@
 import './WatchFiml.scss'
-import { connect } from 'react-redux'
 import cartoon from '../../../assets/audio/cartoon.mp4'
 import { useEffect, useState } from 'react';
 import {
@@ -11,27 +10,16 @@ import {
 import axios from 'axios';
 
 const WatchFiml = (props) => {
-    
-    const film = props.dataRedux.totalphim.filter(e => e.movie._id === props.phimz.id)
     const [episode, setEspisode] = useState()
     const [espisodes, setEspisodes] = useState([]);
     const [server, setServer] = useState();
 
-    // console.log("test", espisodes[0].server_name)
-
     const handleEpisode = (slug, item) => {
-        const currentFiml = {
-            slug: slug,
-            item: item,
-        }
-        props.episodeCurrent(currentFiml)
         setEspisode(item)
-        console.log("link", item)
     }
 
     const data1 = (espisod) => {
         setEspisodes(espisod);
-        console.log("text:", espisod[0].id);
         setEspisode(espisod[0].link)
         setServer(espisod[0].server_name)
 
@@ -44,18 +32,13 @@ const WatchFiml = (props) => {
             const getEspisodes = await fetch('http://localhost:8080/postData/espisodes');
             const espisod = await getEspisodes.json();
             data1(espisod);
-            // setEspisodes(espisod);
-            
         }
         getE();
     }
 
-    // console.log("tap:", espisodes);
-
     useEffect(() => {
         getData();
     }, [])
-
 
     return (
         <div className='xemphim-conatiner'>
@@ -109,17 +92,4 @@ const WatchFiml = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-const mapDispatchToProps = (dispatch) => {
-    return ({
-        episodeCurrent: (epiCurrent) => dispatch({ type: 'EPISODE_CURRENT', payload: epiCurrent })
-    })
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(WatchFiml);
+export default WatchFiml;

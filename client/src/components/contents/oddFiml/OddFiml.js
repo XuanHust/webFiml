@@ -14,7 +14,6 @@ const OddFiml = (props) => {
     const [nation, setNation] = useState("--Quốc gia--")
     const [year, setYear] = useState("--Năm--")
     const [fiml, setFiml] = useState([])
-    const [loadFiml, setLoadFiml] = useState()
     const [data, setData] = useState()
 
     const handleSort = (event) => {
@@ -29,23 +28,9 @@ const OddFiml = (props) => {
     const handleYear = (event) => {
         setYear(event.target.value)
     }
-    const handle = () => {
-        setFiml(props.dataRedux.oddFiml.filter(
-            item =>
-                (nation === item.movie.country[0].name && year === `${item.movie.year}` && category === item.movie.category[0].name)
-        ))
-    }
 
     const handleClick = () => {
-        setFiml(props.dataRedux.oddFiml)
-        nation !== "--Quốc gia--" && year !== "--Năm--" && category !== "--Thể loại--" ?
-            handle()
-            :
-            setFiml(props.dataRedux.oddFiml.filter(
-                item => (nation === item.movie.country[0].name)
-                    || (year === `${item.movie.year}`)
-                    || (category === item.movie.category[0].name)
-            ))
+
     }
 
     const numberOfFiml = fiml.length
@@ -68,11 +53,14 @@ const OddFiml = (props) => {
         setData(dataOfPage)
     }
 
-    useEffect(() => {
+    const getData = () => {
         fetch('http://localhost:8080/oddFiml')
             .then(response => response.json())
             .then(response => setFiml(response))
             .catch(error => console.error(error))
+    }
+    useEffect(() => {
+        getData();
     }, [])
 
     return (
@@ -172,12 +160,4 @@ const OddFiml = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-
-export default connect(mapStateToProps)(OddFiml);
+export default OddFiml;

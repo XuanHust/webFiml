@@ -1,5 +1,4 @@
 import './FimlDetail.scss'
-import { connect } from 'react-redux'
 import {
     Link
 } from "react-router-dom";
@@ -11,7 +10,6 @@ const FimlDetail = (props) => {
     const [actor, setActor] = useState([]);
     const [director, setDirector] = useState([]);
     const [category, setCategory] = useState([]);
-    const [espisodes, setEspisode] = useState([]);
 
     const getData = async () => {
         const data = await axios.post('http://localhost:8080/postData', { id: props.infor.id });
@@ -32,16 +30,9 @@ const FimlDetail = (props) => {
             const category = await getCategory.json();
             setCategory(category);
         }
-
-        // const getE = async () => {
-        //     const getEspisodes = await fetch('http://localhost:8080/postData/espisodes');
-        //     const espisodes = await getEspisodes.json();
-        //     setEspisode(espisodes);
-        // }
         getA();
         getC();
         getD();
-        // getE();
     }
 
     useEffect(() => {
@@ -120,14 +111,11 @@ const FimlDetail = (props) => {
 
                             <p className='infor-right'>
                                 {
-                                    // director.name ?
                                     director.map((item, index) => {
                                         return (
                                             <span>{`${item.name}, `}</span>
                                         )
                                     })
-                                    // :
-                                    // <span>Đang cập nhật</span>
                                 }
                             </p>
 
@@ -137,14 +125,11 @@ const FimlDetail = (props) => {
 
                             <p className='infor-right'>
                                 {
-                                    // actor[0].name ?
                                     actor.map((item, index) => {
                                         return (
                                             <span>{`${item.name}, `}</span>
                                         )
                                     })
-                                    // :
-                                    // <span>Đang cập nhật</span>
                                 }
                             </p>
 
@@ -154,14 +139,11 @@ const FimlDetail = (props) => {
                             <p className='infor-left'>Thể loại</p>
                             <p className='infor-right'>
                                 {
-                                    // actor[0].name ?
                                     category.map((item, index) => {
                                         return (
                                             <span>{`${item.name}, `}</span>
                                         )
                                     })
-                                    // :
-                                    // <span>Đang cập nhật</span>
                                 }
                             </p>
 
@@ -188,12 +170,4 @@ const FimlDetail = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-
-export default connect(mapStateToProps)(FimlDetail);
+export default FimlDetail;

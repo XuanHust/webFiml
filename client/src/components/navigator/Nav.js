@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
     BrowserRouter as Router,
@@ -14,33 +13,21 @@ import Home from "../contents/home/Home";
 import "./Nav.scss"
 import FimlDetail from "../contents/fimlDetail/FimlDetail";
 import { useState, useEffect } from "react";
-import { connect } from "react-redux";
 import WatchFiml from "../contents/fimlDetail/WatchFiml";
-import cartoon1 from "../../assets/audio/cartoon1.mp4"
 
 const Nav = (props) => {
 
-    const [seriesFiml, setSeriesFiml] = useState()
-    const [oddFiml, setOddFiml] = useState()
-    const [shows, setShows] = useState()
-    const [cartoon, setCartoon] = useState()
     const [totalFiml, setTotalFiml] = useState([])
 
-    const loadPhim = () => {
-
-        setSeriesFiml(props.dataRedux.seriesFiml)
-        setOddFiml(props.dataRedux.oddFiml)
-        setShows(props.dataRedux.shows)
-        setCartoon(props.dataRedux.cartoon)
-    }
-
-    const fimls = props.dataRedux.totalphim.filter(e => e.movie._id === props.dataRedux.listBanner.id)
-
-    useEffect(() => {
+    const getData = () => {
         fetch('http://localhost:8080/totalFiml')
             .then(response => response.json())
             .then(response => setTotalFiml(response))
             .catch(error => console.error(error))
+    }
+
+    useEffect(() => {
+        getData();
     }, [])
 
     return (
@@ -96,16 +83,6 @@ const Nav = (props) => {
                 <Route path="/danhsach/hoathinh" element={<Cartoon />} />
                 <Route path="/MoviesTv" element={<Home />} />
                 {
-                    fimls &&
-                    fimls.map((item, index) => {
-                        return (
-                            <Route path={'/' + item.movie.slug} element={<FimlDetail infor={item} />} />
-                        )
-                    })
-                }
-
-
-                {
                     totalFiml && totalFiml.length &&
                     totalFiml.map((item, index) => {
                         return (
@@ -127,12 +104,4 @@ const Nav = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-
-export default connect(mapStateToProps)(Nav);
+export default Nav;

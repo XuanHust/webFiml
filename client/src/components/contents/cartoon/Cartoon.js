@@ -1,5 +1,4 @@
 import './Cartoon.scss'
-import { connect } from 'react-redux';
 import CardFiml from '../cardFiml/CardFiml';
 import { useState, useEffect } from 'react';
 
@@ -14,7 +13,6 @@ const Cartoon = (props) => {
     const [nation, setNation] = useState("--Quốc gia--")
     const [year, setYear] = useState("--Năm--")
     const [fiml, setFiml] = useState([])
-    const [loadFiml, setLoadFiml] = useState()
     const [data, setData] = useState()
 
     const handleSort = (event) => {
@@ -29,23 +27,9 @@ const Cartoon = (props) => {
     const handleYear = (event) => {
         setYear(event.target.value)
     }
-    const handle = () => {
-        setFiml(props.dataRedux.cartoon.filter(
-            item =>
-                (nation === item.movie.country[0].name && year === `${item.movie.year}` && category === item.movie.category[0].name)
-        ))
-    }
 
     const handleClick = () => {
-        setFiml(props.dataRedux.cartoon)
-        nation !== "--Quốc gia--" && year !== "--Năm--" && category !== "--Thể loại--" ?
-            handle()
-            :
-            setFiml(props.dataRedux.cartoon.filter(
-                item => (nation === item.movie.country[0].name)
-                    || (year === `${item.movie.year}`)
-                    || (category === item.movie.category[0].name)
-            ))
+
     }
 
     const numberOfFiml = fiml.length
@@ -68,11 +52,15 @@ const Cartoon = (props) => {
         setData(dataOfPage)
     }
 
-    useEffect(() => {
+    const getData = () => {
         fetch('http://localhost:8080/cartoon')
             .then(response => response.json())
             .then(response => setFiml(response))
             .catch(error => console.error(error))
+    }
+
+    useEffect(() => {
+        getData();
     }, [])
 
     return (
@@ -172,12 +160,4 @@ const Cartoon = (props) => {
     )
 }
 
-const mapStateToProps = (state) => {
-    return (
-        {
-            dataRedux: state
-        }
-    )
-}
-
-export default connect(mapStateToProps)(Cartoon);
+export default Cartoon;

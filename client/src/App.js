@@ -5,7 +5,6 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Nav from './components/navigator/Nav';
 import { useEffect, useState } from 'react'
-import { connect } from 'react-redux';
 import Login from './components/login/Login';
 
 
@@ -15,10 +14,6 @@ function App(props) {
   const [login, setLogin] = useState()
   const [err, setErr] = useState()
 
-  const handleLoad = () => {
-    const state = props.callApi()
-  }
-
   const handleLogin = (login) => {
     console.log("login", login)
     login.username === "admin" && login.password === "admin" ?
@@ -27,13 +22,8 @@ function App(props) {
       setErr("Username or password not corect!")
   }
 
-  // fetch('http://localhost:8080/testApi')
-  //   .then(response => response.json())
-  //   .then(response => console.log(response))
-  //   .catch(error => console.error(error))
-
   useEffect(() => {
-    window.addEventListener('load', handleLoad)
+    
   }, [])
 
   return (
@@ -56,19 +46,4 @@ function App(props) {
   );
 }
 
-
-const mapStateToProps = (state) => {
-  return (
-    {
-      dataRedux: state.listFilm
-    }
-  )
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return ({
-    callApi: () => dispatch({ type: 'CALL_API' })
-  })
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
