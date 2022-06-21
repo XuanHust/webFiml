@@ -126,6 +126,7 @@ const Nav = (props) => {
                 <Route path="/danhsach/hoathinh" element={<Fimls fimlType="cartoon" />} />
                 <Route path="/searchActor/fimls" element={<Fimls fimlType="searchActor/fimls" />} />
                 <Route path="/selectType" element={<Fimls fimlType="" listFiml={fimls} />} />
+                <Route path="/Login" element={<Home />} />
                 <Route path="/MoviesTv" element={<Home />} />
                 {
                     totalFiml && totalFiml.length &&

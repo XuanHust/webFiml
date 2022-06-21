@@ -1,16 +1,14 @@
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
 import "./Login.scss"
-import { useState } from "react";
+import { useEffect, useState } from "react"
 import {
     BrowserRouter as Router,
     Routes,
     Route,
     Link
 } from "react-router-dom";
-
-//validation form
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
 const schema = yup.object().shape({
     username: yup
@@ -23,7 +21,9 @@ const schema = yup.object().shape({
         .max(10, "mật khẩu tối đa 20 kí tự"),
 });
 
-const Login = (props) => {
+const Login1 = (props) => {
+
+    const [currentView, setCurrentView] = useState("signUp");
 
     const { register,
         handleSubmit,
@@ -32,57 +32,102 @@ const Login = (props) => {
         resolver: yupResolver(schema)
     });
 
-    const [err, setErr] = useState()
-
-    const onLoginSubmit = (data) => {
-        props.handleLogin(data);
-        setErr(props.err)
+    const changeView = (view) => {
+        setCurrentView(view);
     }
+
+    const handleClick = () => {
+        props.handleLogin(false);
+    }
+    const onLoginSubmit = (data) => {
+        props.handleLogin(false);
+        console.log("data", data)
+    }
+
+    const currentViews = () => {
+        switch (currentView) {
+      case "signUp":
+        return (
+          <form>
+            <h2>Sign Up!</h2>
+            <fieldset>
+              <legend>Create Account</legend>
+              <ul>
+                <li>
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" required/>
+                </li>
+                <li>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" required/>
+                </li>
+                <li>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" required/>
+                </li>
+              </ul>
+            </fieldset>
+            <button>Submit</button>
+            <button type="button" onClick={ () => changeView("logIn")}>Have an Account?</button>
+          </form>
+        )
+        break
+      case "logIn":
+        return (
+          <form>
+            <h2>Welcome Back!</h2>
+            <fieldset>
+              <legend>Log In</legend>
+              <ul>
+                <li>
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" {...register("username")} />
+                </li>
+                <li>
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" {...register("password")} />
+                </li>
+                <li>
+                  <i/>
+                  <a onClick={ () => changeView("PWReset")} href="#">Forgot Password?</a>
+                </li>
+              </ul>
+            </fieldset>
+            <Link to="/MoviesTv" onClick={handleSubmit(onLoginSubmit)} className="button">Login</Link>
+            <button type="button" onClick={ () => changeView("signUp")}>Create an Account</button>
+          </form>
+        )
+        break
+      case "PWReset":
+        return (
+          <form>
+          <h2>Reset Password</h2>
+          <fieldset>
+            <legend>Password Reset</legend>
+            <ul>
+              <li>
+                <em>A reset link will be sent to your inbox!</em>
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required/>
+              </li>
+            </ul>
+          </fieldset>
+          <button>Send Reset Link</button>
+          <button type="button" onClick={ () => changeView("logIn")}>Go Back</button>
+        </form>
+        )
+      default:
+        break
+    }
+    }
+
     return (
-        <Router>
-            <div className='login-container'>
-                <div className="login">
-                    <div className="login-content">
-                        <div className="title">MovieTv</div>
-                        <form>
-                            <div className="field">
-                                <label> Username: </label>
-                                <input {...register("username")}></input>
-
-                                {
-                                    errors.username &&
-                                    <p className="error">{errors.username?.message}</p>
-                                }
-                            </div>
-
-                            <div className="field">
-                                <label>Password: </label>
-                                <input type="password" name="password" {...register("password")}></input>
-
-                                {
-                                    errors.password &&
-                                    <p className="error">{errors.password?.message}</p>
-                                }
-                            </div>
-
-                            <div className="field button">
-                                <Link to="/">
-                                    <button onClick={handleSubmit(onLoginSubmit)} className="button-login" type="submit">Login</button>
-                                </Link>
-                                <Link to="/signup">
-                                    <button className="button-signup" type="button">Signup</button>
-                                </Link>
-                                {
-                                    props.err &&
-                                    <p className="error err">{err}</p>
-                                }
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </Router>
+        <section id="entry-page">
+            {currentViews()}
+        </section>
     )
 }
 
-export default Login;
+export default Login1;

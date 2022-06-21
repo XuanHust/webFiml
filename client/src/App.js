@@ -13,44 +13,46 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ButtonLogin from './components/buttonLogin/ButtonLogin';
 
 
 function App(props) {
 
   const [apiRes, setApiRes] = useState()
-  const [login, setLogin] = useState()
+  const [login, setLogin] = useState(false)
   const [err, setErr] = useState()
 
-  const handleLogin = (login) => {
-    console.log("login", login)
-    login.username === "admin" && login.password === "admin" ?
-      setLogin(true)
-      :
-      setErr("Username or password not corect!")
+  const handleLogin = (flag) => {
+    setLogin(flag)
   }
 
   useEffect(() => {
-    
+
   }, [])
 
   return (
     <Router>
-    <div className="App">
-      {
-        // login ?
+      <div className="App">
+        {
           <>
-            <Header />
-            <Nav />
-            <Content />
-            <Footer />
+            {
+              login ?
+                <Routes>
+                  <Route path="/MoviesTv" element={<Login handleLogin={handleLogin} />} />
+                </Routes>
+                :
+                <>
+                  <Header />
+                  <Nav />
+                  <Content />
+                  <Footer />
+                </>
+                
+            }
+            <ButtonLogin handleLogin={handleLogin} />
           </>
-          // :
-          // <>
-          //   < Login handleLogin={handleLogin} err={err} />
-          // </>
-
-      }
-    </div>
+        }
+      </div>
     </Router>
   );
 }
