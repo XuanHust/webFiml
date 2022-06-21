@@ -7,6 +7,13 @@ import Nav from './components/navigator/Nav';
 import { useEffect, useState } from 'react'
 import Login from './components/login/Login';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App(props) {
 
@@ -27,6 +34,7 @@ function App(props) {
   }, [])
 
   return (
+    <Router>
     <div className="App">
       {
         // login ?
@@ -43,6 +51,7 @@ function App(props) {
 
       }
     </div>
+    </Router>
   );
 }
 

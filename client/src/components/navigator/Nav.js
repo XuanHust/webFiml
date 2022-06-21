@@ -28,7 +28,7 @@ const Nav = (props) => {
     }, [])
 
     return (
-        <Router>
+        <>
             <div id="container-nav">
                 <div className="nav-content">
                     <li className="home">
@@ -78,6 +78,7 @@ const Nav = (props) => {
                 <Route path="danhsach/phimle" element={<Fimls fimlType = "single"/>} />
                 <Route path="/danhsach/shows" element={<Fimls fimlType = "shows"/>} />
                 <Route path="/danhsach/hoathinh" element={<Fimls fimlType = "cartoon"/>} />
+                <Route path="/searchActor/fimls" element={<Fimls fimlType = "searchActor/fimls"/>} />
                 <Route path="/MoviesTv" element={<Home />} />
                 {
                     totalFiml && totalFiml.length &&
@@ -97,7 +98,7 @@ const Nav = (props) => {
                     })
                 }
             </Routes>
-        </Router>
+        </>
     )
 }
 

@@ -19,6 +19,7 @@ var director = require('./routes/director');
 var category = require('./routes/category');
 var espisodes = require('./routes/espisodes');
 var filterFiml = require('./routes/filterFiml');
+var searchActor = require('./routes/searchActor');
 
 
 var app = express();
@@ -48,6 +49,7 @@ app.use("/director", director);
 app.use("/category", category);
 app.use("/espisodes", espisodes);
 app.use(filterFiml);
+app.use(searchActor);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
