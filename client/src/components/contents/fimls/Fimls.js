@@ -76,8 +76,17 @@ const SeriesFiml = (props) => {
             .catch(error => console.error(error))
     }
 
+    const takeData = () => {
+        setFiml(props.listFiml)
+    }
+
+    console.log("listdata", props.listFiml)
+
     useEffect(() => {
-        getData();
+        props.fimlType ?
+        getData()
+        :
+        takeData()
     }, [props])
 
     return (
@@ -106,7 +115,7 @@ const SeriesFiml = (props) => {
                         <option>Viễn Tưởng</option>
                         <option>Gia Đình</option>
                         <option>Khoa Học</option>
-                        <option>Chính kịch</option>
+                        <option>Chính Kịch</option>
                         <option>Tài Liệu</option>
                         <option>Phiêu Lưu</option>
                         <option>Chiến Tranh</option>
