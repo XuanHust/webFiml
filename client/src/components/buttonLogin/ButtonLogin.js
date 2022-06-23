@@ -13,7 +13,7 @@ const ButtonLogin = (props) => {
     const [flag, setFlag] = useState(true)
 
     const handleClick = () => {
-        props.handleLogin(flag);
+        props.handleLogin("", flag);
         let setFlags = !flag;
         setFlag(setFlags);
     }
@@ -23,14 +23,14 @@ const ButtonLogin = (props) => {
             <div className="button" onClick={handleClick}>
                 {
                     flag === true ?
-                        <Link to="/MoviesTv">
+                        <Link to="/Login">
                             <i class="fa-solid fa-user"></i>
                             <p>Login</p>
                         </Link>
                         :
                         <Link to="/MoviesTv">
                             <i class="fa-solid fa-right-to-bracket"></i>
-                            <p>Back</p>
+                            <p>{props.acc}</p>
                         </Link>
                 }
             </div>

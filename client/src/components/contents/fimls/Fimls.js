@@ -157,7 +157,7 @@ const SeriesFiml = (props) => {
                     </select>
                     <button type='button'
                         onClick={() => handleClick()}
-                    >Lọc fiml</button>
+                    >Lọc Phim</button>
                 </div>
                 <div className='fimlsall'>
                     {

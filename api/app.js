@@ -21,6 +21,9 @@ var espisodes = require('./routes/espisodes');
 var filterFiml = require('./routes/filterFiml');
 var searchActor = require('./routes/searchActor');
 var selectType = require('./routes/selectType');
+var account = require('./routes/account');
+var allUser = require('./routes/allUser');
+var creAcc = require('./routes/creAcc');
 
 
 var app = express();
@@ -52,6 +55,9 @@ app.use("/espisodes", espisodes);
 app.use(filterFiml);
 app.use(searchActor);
 app.use(selectType);
+app.use(account);
+app.use(allUser);
+app.use(creAcc);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

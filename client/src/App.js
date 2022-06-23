@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Nav from './components/navigator/Nav';
 import { useEffect, useState } from 'react'
 import Login from './components/login/Login';
+import React from 'react';
 
 import {
   BrowserRouter as Router,
@@ -14,20 +15,22 @@ import {
   Link
 } from "react-router-dom";
 import ButtonLogin from './components/buttonLogin/ButtonLogin';
+import Home from './components/contents/home/Home';
 
 
 function App(props) {
 
-  const [apiRes, setApiRes] = useState()
+  const [account, setAccount] = useState("Login")
   const [login, setLogin] = useState(false)
   const [err, setErr] = useState()
 
-  const handleLogin = (flag) => {
+  const handleLogin = (acc, flag) => {
     setLogin(flag)
+    setAccount(acc)
   }
 
   useEffect(() => {
-
+    
   }, [])
 
   return (
@@ -38,7 +41,7 @@ function App(props) {
             {
               login ?
                 <Routes>
-                  <Route path="/MoviesTv" element={<Login handleLogin={handleLogin} />} />
+                  <Route path="/Login" element={<Login handleLogin={handleLogin} />} />
                 </Routes>
                 :
                 <>
@@ -49,7 +52,7 @@ function App(props) {
                 </>
                 
             }
-            <ButtonLogin handleLogin={handleLogin} />
+            <ButtonLogin handleLogin={handleLogin} acc={account} />
           </>
         }
       </div>
