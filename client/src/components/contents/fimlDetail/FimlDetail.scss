@@ -128,6 +128,55 @@
             line-height: 1.5;
         }
     }
+    .comments{
+        background-color: #fff;
+        width: 60%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        padding: 10px;
+        p{
+            color: #000;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        .post{
+            position: relative;
+            .postcomment{
+                max-width: 90%;
+                min-width: 90%;
+                min-height: 70px;
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 17px;
+            }
+            .button{
+                position: absolute;
+                top: 22%;
+                right: -17px;
+                padding: 8px 15px;
+                font-size: 19px;
+                font-weight: 600;
+                cursor: pointer;
+                border-radius: 10px;
+                border: 1px solid #ddd;
+                display: inline-block;
+                transition: all 0.3s ease;
+                color: #fff;
+                background-color: #ef5f06;
+                margin-right: 15px;
+                &:hover{
+                    background-color: #ea803e;
+                }
+            }
+        }
+        .err{
+            font-size: 18px;
+            text-align: center;
+            color: red;
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -141,6 +190,9 @@
         .noidung{
             width: 80%;
         }
+        .comments{
+            width: 80%;
+        }
     }
 }
 @media only screen and (max-width: 768px) {
@@ -152,6 +204,9 @@
             width: 96%;
         }
         .noidung{
+            width: 96%;
+        }
+        .comments{
             width: 96%;
         }
     }
@@ -208,6 +263,12 @@
             }
         }
         .noidung{
+            width: 99%;
+            p{
+                font-size: 13px;
+            }
+        }
+        .comments{
             width: 99%;
             p{
                 font-size: 13px;

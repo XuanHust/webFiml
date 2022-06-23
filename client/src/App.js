@@ -46,7 +46,7 @@ function App(props) {
                 :
                 <>
                   <Header />
-                  <Nav />
+                  <Nav acc={account}/>
                   <Content />
                   <Footer />
                 </>

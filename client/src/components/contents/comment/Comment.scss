@@ -1,0 +1,33 @@
+.comment-container{
+    background-color: rgb(229, 226, 226);
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    .comment{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 100%;
+        
+        .comment-left{
+            width: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            .comment-top{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: rgb(251, 245, 245);
+                cursor: pointer;
+            }
+            .comment-bottom{
+                cursor: pointer;
+            }
+        }
+        .comment-right{
+            width: 85%;
+        }
+    }
+}

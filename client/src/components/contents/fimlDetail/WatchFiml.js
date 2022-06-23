@@ -8,11 +8,43 @@ import {
     Link
 } from "react-router-dom";
 import axios from 'axios';
+import Comment from '../comment/Comment';
 
 const WatchFiml = (props) => {
     const [episode, setEspisode] = useState()
     const [espisodes, setEspisodes] = useState([]);
     const [server, setServer] = useState();
+    const [comment, setComment] = useState([]);
+    const [postCommnent, setPostComment] = useState("")
+    const [err, setErr] = useState(false)
+
+
+    const onChangeComment = (e) => {
+        setPostComment(e.target.value)
+    }
+
+    const comments = async () => {
+        const getComment = await fetch('http://localhost:8080/comment');
+        const com = await getComment.json();
+        const comFilter = com.filter(item => item.idfiml === props.phimz.id)
+        setComment(comFilter);
+    }
+
+    const CheckLogin = async () => {
+        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.phimz.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        comments();
+        setPostComment("")
+        setErr(false)
+    }
+
+    const handleClick = async () => {
+        console.log("check>>", props.acc === "Login")
+        props.acc === "Login" ?
+            setErr(true)
+            :
+            CheckLogin()
+
+    }
 
     const handleEpisode = (slug, item) => {
         setEspisode(item)
@@ -34,6 +66,7 @@ const WatchFiml = (props) => {
             data1(espisod);
         }
         getE();
+        comments();
     }
 
     useEffect(() => {
@@ -86,6 +119,31 @@ const WatchFiml = (props) => {
                             })
                         }
                     </div>
+                </div>
+                <div className='episodes'>
+                    <div className='chontap'>
+                        <i class="fa-solid fa-comment"></i>
+                        <p>Bình Luận</p>
+                    </div>
+                </div>
+                <div className='comments'>
+                    {
+                        comment.map((item, index) => {
+                            return (
+                                <Comment user={item.user} id={item.idfiml} content={item.content} />
+                            )
+                        })
+                    }
+                </div>
+                <div className='comments'>
+                    <div className='post'>
+                        <textarea className='postcomment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
+                        <button type='button' className='button' onClick={() => handleClick()}>Post</button>
+                    </div>
+                    {
+                        err &&
+                        <p className='err'>Bạn cần đăng nhập để bình luận!</p>
+                    }
                 </div>
             </div>
         </div>

@@ -4,12 +4,43 @@ import {
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import axios from 'axios'
+import Comment from '../comment/Comment';
 
 
 const FimlDetail = (props) => {
     const [actor, setActor] = useState([]);
     const [director, setDirector] = useState([]);
     const [category, setCategory] = useState([]);
+    const [comment, setComment] = useState([]);
+    const [postCommnent, setPostComment] = useState("")
+    const [err, setErr] = useState(false)
+
+    const onChangeComment = (e) => {
+        setPostComment(e.target.value)
+    }
+
+    const comments = async () => {
+        const getComment = await fetch('http://localhost:8080/comment');
+        const com = await getComment.json();
+        const comFilter = com.filter(item => item.idfiml === props.infor.id)
+        setComment(comFilter);
+    }
+
+    const CheckLogin = async () => {
+        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.infor.id, comment:postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        comments();
+        setPostComment("")
+        setErr(false)
+    }
+
+    const handleClick = async () => {
+        console.log("check>>", props.acc === "Login")
+        props.acc === "Login" ?
+        setErr(true)
+        :
+        CheckLogin()
+        
+    }
 
     const getData = async () => {
         const data = await axios.post('http://localhost:8080/postData', { id: props.infor.id });
@@ -30,9 +61,11 @@ const FimlDetail = (props) => {
             const category = await getCategory.json();
             setCategory(category);
         }
+
         getA();
         getC();
         getD();
+        comments();
     }
 
     useEffect(() => {
@@ -165,6 +198,31 @@ const FimlDetail = (props) => {
                 <p>
                     {props.infor.content}
                 </p>
+            </div>
+            <div className='noidung-content'>
+                <div className='noidung-title'>
+                    <i class="fa-solid fa-comment"></i>
+                    <p>Bình Luận</p>
+                </div>
+            </div>
+            <div className='comments'>
+                {
+                    comment.map((item, index) => {
+                        return (
+                            <Comment user={item.user} id={item.idfiml} content={item.content} />
+                        )
+                    })
+                }
+            </div>
+            <div className='comments'>
+                <div className='post'>
+                    <textarea className='postcomment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
+                    <button type='button' className='button' onClick={() => handleClick()}>Post</button>
+                </div>
+                {
+                    err &&
+                    <p className='err'>Bạn cần đăng nhập để bình luận!</p>
+                }
             </div>
         </div>
     )

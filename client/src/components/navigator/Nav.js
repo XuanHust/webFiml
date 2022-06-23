@@ -132,7 +132,7 @@ const Nav = (props) => {
                     totalFiml && totalFiml.length &&
                     totalFiml.map((item, index) => {
                         return (
-                            <Route path={"/" + item.slug + "/movietv@"} element={<WatchFiml phimz={item} />} />
+                            <Route path={"/" + item.slug + "/movietv@"} element={<WatchFiml phimz={item} acc={props.acc} />} />
                         )
                     })
                 }
@@ -141,7 +141,7 @@ const Nav = (props) => {
                     totalFiml && totalFiml.length &&
                     totalFiml.map((item, index) => {
                         return (
-                            <Route path={"/" + item.slug} element={<FimlDetail infor={item} />} />
+                            <Route path={"/" + item.slug} element={<FimlDetail infor={item} acc={props.acc} />} />
                         )
                     })
                 }
