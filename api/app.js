@@ -24,6 +24,8 @@ var selectType = require('./routes/selectType');
 var account = require('./routes/account');
 var allUser = require('./routes/allUser');
 var creAcc = require('./routes/creAcc');
+var comments = require('./routes/comment');
+var postComment = require('./routes/postComment');
 
 
 var app = express();
@@ -58,6 +60,8 @@ app.use(selectType);
 app.use(account);
 app.use(allUser);
 app.use(creAcc);
+app.use(comments);
+app.use(postComment);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
