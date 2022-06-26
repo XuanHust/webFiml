@@ -27,7 +27,7 @@ const FimlDetail = (props) => {
     }
 
     const CheckLogin = async () => {
-        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.infor.id, comment:postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.infor.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
         comments();
         setPostComment("")
         setErr(false)
@@ -36,10 +36,10 @@ const FimlDetail = (props) => {
     const handleClick = async () => {
         console.log("check>>", props.acc === "Login")
         props.acc === "Login" ?
-        setErr(true)
-        :
-        CheckLogin()
-        
+            setErr(true)
+            :
+            CheckLogin()
+
     }
 
     const getData = async () => {

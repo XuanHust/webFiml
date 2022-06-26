@@ -1,6 +1,7 @@
 import './WatchFiml.scss'
 import cartoon from '../../../assets/audio/cartoon.mp4'
 import { useEffect, useState } from 'react';
+import Iframe from 'react-iframe'
 import {
     BrowserRouter as Router,
     Routes,
@@ -83,6 +84,13 @@ const WatchFiml = (props) => {
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
+                    {/* <Iframe url={episode}
+                        width="450px"
+                        height="450px"
+                        id="myId"
+                        className="myClassname"
+                        display="initial"
+                        position="relative" /> */}
                 </div>
                 <div className='server'>
                     <p className='first'>

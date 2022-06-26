@@ -1,7 +1,7 @@
 import "./Comment.scss"
 
 const Comment = (props) => {
-    return(
+    return (
         <div className="comment-container">
             <div className="comment">
                 <div className="comment-left">

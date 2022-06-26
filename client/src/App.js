@@ -30,7 +30,7 @@ function App(props) {
   }
 
   useEffect(() => {
-    
+
   }, [])
 
   return (
@@ -46,11 +46,11 @@ function App(props) {
                 :
                 <>
                   <Header />
-                  <Nav acc={account}/>
+                  <Nav acc={account} />
                   <Content />
                   <Footer />
                 </>
-                
+
             }
             <ButtonLogin handleLogin={handleLogin} acc={account} />
           </>

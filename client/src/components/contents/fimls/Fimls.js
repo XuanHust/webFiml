@@ -84,9 +84,9 @@ const SeriesFiml = (props) => {
 
     useEffect(() => {
         props.fimlType ?
-        getData()
-        :
-        takeData()
+            getData()
+            :
+            takeData()
     }, [props])
 
     return (
