@@ -27,6 +27,7 @@ var creAcc = require('./routes/creAcc');
 var comments = require('./routes/comment');
 var postComment = require('./routes/postComment');
 var booksRouter = require('./routes/admin');
+// var video = require('./routes/video');
 
 var app = express();
 
@@ -64,6 +65,9 @@ app.use(creAcc);
 app.use(comments);
 app.use(postComment);
 app.use('/admin', booksRouter);
+app.use('/video', (req, res) => {
+  res.sendFile('assets/video/cartoon.mp4', {root: __dirname})
+});
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

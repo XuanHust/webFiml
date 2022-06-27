@@ -80,6 +80,7 @@ const WatchFiml = (props) => {
                 <div className='main-phim'>
                     <iframe
                         src={episode}
+                        // src="http://localhost:8080/video/"
                         title="Fiml MoviesTv" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
