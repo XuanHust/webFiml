@@ -1,4 +1,4 @@
-import './FimlDetail.scss'
+import './FilmDetail.scss'
 import {
     Link
 } from "react-router-dom";
@@ -7,7 +7,7 @@ import axios from 'axios'
 import Comment from '../comment/Comment';
 
 
-const FimlDetail = (props) => {
+const FilmDetail = (props) => {
     const [actor, setActor] = useState([]);
     const [director, setDirector] = useState([]);
     const [category, setCategory] = useState([]);
@@ -22,7 +22,7 @@ const FimlDetail = (props) => {
     const comments = async () => {
         const getComment = await fetch('http://localhost:8080/comment');
         const com = await getComment.json();
-        const comFilter = com.filter(item => item.idfiml === props.infor.id)
+        const comFilter = com.filter(item => item.idFilm === props.infor.id)
         setComment(comFilter);
     }
 
@@ -34,7 +34,7 @@ const FimlDetail = (props) => {
     }
 
     const handleClick = async () => {
-        console.log("check>>", props.acc === "Login")
+        // console.log("check>>", props.acc === "Login")
         props.acc === "Login" ?
             setErr(true)
             :
@@ -73,8 +73,8 @@ const FimlDetail = (props) => {
     }, [])
 
     return (
-        <div className='phimdetail-container'>
-            <div className='phimdetail-content'>
+        <div className='filmDetail-container'>
+            <div className='filmDetail-content'>
                 <div className='main-content'>
                     <div className='main-left'>
                         <p className='img'>
@@ -83,7 +83,7 @@ const FimlDetail = (props) => {
                         <button type='button'>
                             <Link to={"/" + props.infor.slug + "/movietv@"}>
                                 <i class="fa-solid fa-play"></i>
-                                <p>Watch fiml</p>
+                                <p>Watch film</p>
                             </Link>
                         </button>
                     </div>
@@ -188,19 +188,19 @@ const FimlDetail = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='noidung-content'>
-                <div className='noidung-title'>
+            <div className='content-content'>
+                <div className='content-title'>
                     <i class="fa-solid fa-book"></i>
-                    <p>Nội Dung fiml</p>
+                    <p>Nội Dung film</p>
                 </div>
             </div>
-            <div className='noidung'>
+            <div className='content'>
                 <p>
                     {props.infor.content}
                 </p>
             </div>
-            <div className='noidung-content'>
-                <div className='noidung-title'>
+            <div className='content-content'>
+                <div className='content-title'>
                     <i class="fa-solid fa-comment"></i>
                     <p>Bình Luận</p>
                 </div>
@@ -209,14 +209,14 @@ const FimlDetail = (props) => {
                 {
                     comment.map((item, index) => {
                         return (
-                            <Comment user={item.user} id={item.idfiml} content={item.content} />
+                            <Comment user={item.user} id={item.idFilm} content={item.content} />
                         )
                     })
                 }
             </div>
             <div className='comments'>
                 <div className='post'>
-                    <textarea className='postcomment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
+                    <textarea className='postComment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
                     <button type='button' className='button' onClick={() => handleClick()}>Post</button>
                 </div>
                 {
@@ -228,4 +228,4 @@ const FimlDetail = (props) => {
     )
 }
 
-export default FimlDetail;
+export default FilmDetail;

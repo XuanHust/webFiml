@@ -1,10 +1,10 @@
-.cardPhim{
+.cardFilm{
     width: 100%;
     cursor: pointer;
     padding: 2px;
     margin-bottom: 20px;
     padding-bottom: 10px;
-    .cardphim-conent{
+    .cardFilm-content{
         line-height: 1.6;
         width: 100%;
         .img{
@@ -16,13 +16,13 @@
             }
             margin-bottom: 10px;
         }
-        .nametv{
+        .nameTv{
             font-size: 13px;
             font-weight: 700;
             color: rgb(221, 221, 9);
             padding: 0 10px;
         }
-        .nameta{
+        .nameTa{
             padding: 0 10px;
             font-size: 13px;
             font-weight: 400;
@@ -31,17 +31,17 @@
     }
 }
 @media only screen and (max-width: 1024px) {
-    .cardPhim{
+    .cardFilm{
         width: 100%;
     }
 }
 @media only screen and (max-width: 768px) {
-    .cardPhim{
+    .cardFilm{
         width: 100%;
     }
 }
 @media only screen and (max-width: 480px) {
-    .cardPhim{
+    .cardFilm{
         width: 100%;
     }
 }

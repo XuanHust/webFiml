@@ -1,11 +1,11 @@
-.xemphim-conatiner{
+.watchFilm-conatiner{
     background-color: #1a1a1a;
     width: 100%;
     padding: 20px 0;
-    .xemphim-content{
+    .watchFilm-content{
         width: 70%;
         margin: 0 auto;
-        .main-phim{
+        .main-film{
             width: 100%;
             text-align: center;
             iframe{
@@ -24,7 +24,7 @@
             }
             button{
                 border: none;
-                background-color: #ddd;
+                // background-color: #ddd;
                 padding: 10px;
                 border-radius: 10px;
                 cursor: pointer;
@@ -36,7 +36,7 @@
                 }
             }
             button:hover{
-                background-color: rgb(179, 37, 37);
+                background-color: rgb(98, 234, 91);
                 a{
                     color: #fff;
                 }
@@ -73,12 +73,12 @@
         .name{
             padding: 5px 10px;
             font-size: 19px;
-            .nametv{
+            .nameTv{
                 color: yellow;
                 font-weight: 700;
                 margin-bottom: 5px;
             }
-            .nameta{
+            .nameTa{
                 color: #fff;
                 font-size: 15px;
                 font-weight: 500;
@@ -87,7 +87,7 @@
         }
         .episodes{
             padding: 5px 10px;
-            .chontap{
+            .choose{
                 display: flex;
                 align-items: center;
                 color: #fff;
@@ -101,7 +101,7 @@
                     text-transform: uppercase;
                 }
             }
-            .tap{
+            .espisode{
                 display: flex;
                 flex-wrap: wrap;
                 align-items: center;
@@ -144,7 +144,7 @@
             }
             .post{
                 position: relative;
-                .postcomment{
+                .postComment{
                     max-width: 90%;
                     min-width: 90%;
                     min-height: 70px;
@@ -182,24 +182,24 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .xemphim-conatiner{
-        .xemphim-content{
+    .watchFilm-container{
+        .watchFilm-content{
             width: 85%;
         }
     }
 }
 @media only screen and (max-width: 768px) {
-    .xemphim-conatiner{
-        .xemphim-content{
+    .watchFilm-container{
+        .watchFilm-content{
             width: 95%;
         }
     }
 }
 @media only screen and (max-width: 480px) {
-    .xemphim-conatiner{
-        .xemphim-content{
+    .watchFilm-container{
+        .watchFilm-content{
             width: 99%;
-            .main-phim{
+            .main-film{
                 iframe{
                     height: 350px;
                 }
@@ -224,12 +224,12 @@
             }
             .name{
                 font-size: 17px;
-                .nameta{
+                .nameTa{
                     font-size: 13px;
                 }
             }
             .episodes{
-                .tap{
+                .espisode{
                     button{
                         width: 48px;
                     }

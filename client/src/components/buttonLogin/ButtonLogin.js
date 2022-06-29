@@ -19,7 +19,7 @@ const ButtonLogin = (props) => {
     }
 
     return (
-        <div className="Button-container">
+        <div className="button-container">
             <div className="button" onClick={handleClick}>
                 {
                     flag === true ?

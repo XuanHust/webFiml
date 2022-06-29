@@ -109,10 +109,10 @@ const Login = (props) => {
                   <label for="username">Username:</label>
                   <input type="text" id="username" onChange={(e) => handleCreUser(e)} value={creUser} />
                 </li>
-                <li>
+                {/* <li>
                   <label for="email">Email:</label>
                   <input type="email" id="email" required />
-                </li>
+                </li> */}
                 <li>
                   <label for="password">Password:</label>
                   <input type="password" id="password" onChange={(e) => handleCrePass(e)} value={crePass} />

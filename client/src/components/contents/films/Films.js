@@ -1,5 +1,5 @@
-import './Fimls.scss';
-import CardFiml from '../cardFiml/CardFiml';
+import './Films.scss';
+import CardFilm from '../cardFilm/CardFilm';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -8,13 +8,13 @@ import {
 } from "react-router-dom";
 
 
-const SeriesFiml = (props) => {
+const SeriesFilm = (props) => {
 
     const [sort, setSort] = useState("--Sắp xếp--")
     const [category, setCategory] = useState("--Thể loại--")
     const [nation, setNation] = useState("--Quốc gia--")
     const [year, setYear] = useState("--Năm--")
-    const [fiml, setFiml] = useState([])
+    const [film, setFilm] = useState([])
     const [data, setData] = useState()
 
     const handleSort = (event) => {
@@ -31,27 +31,27 @@ const SeriesFiml = (props) => {
     }
 
     const handleFilter = async (filter) => {
-        const dataFilter = await axios.post('http://localhost:8080/filterFiml', filter);
-        const getFimls = async () => {
-            const getFiml = await fetch('http://localhost:8080/filterFiml/fimls');
-            const fiml = await getFiml.json();
-            setFiml(fiml);
+        const dataFilter = await axios.post('http://localhost:8080/filterFilm', filter);
+        const getFilms = async () => {
+            const getFilm = await fetch('http://localhost:8080/filterFilm/films');
+            const film = await getFilm.json();
+            setFilm(film);
         }
-        getFimls();
+        getFilms();
     }
     const handleClick = () => {
         const filter = {
             category: category,
             nation: nation,
             year: year,
-            type: props.fimlType,
+            type: props.filmType,
         }
         handleFilter(filter);
     }
 
-    const numberOfFiml = fiml.length
-    const fimlOfPage = 12
-    const numberOfPage = Math.ceil(numberOfFiml / fimlOfPage)
+    const numberOfFilm = film.length
+    const filmOfPage = 12
+    const numberOfPage = Math.ceil(numberOfFilm / filmOfPage)
     let page = []
     let dataOfPage = []
     for (let i = 0; i < numberOfPage; i++) {
@@ -59,39 +59,39 @@ const SeriesFiml = (props) => {
     }
     const handlePage = (number) => {
         dataOfPage = []
-        let maxNumber = fimlOfPage * number
-        if (fimlOfPage * number > fiml.length) {
-            maxNumber = fiml.length
+        let maxNumber = filmOfPage * number
+        if (filmOfPage * number > film.length) {
+            maxNumber = film.length
         }
-        for (let j = fimlOfPage * (number - 1); j < maxNumber; j++) {
-            dataOfPage = [...dataOfPage, fiml[j]]
+        for (let j = filmOfPage * (number - 1); j < maxNumber; j++) {
+            dataOfPage = [...dataOfPage, film[j]]
         }
         setData(dataOfPage)
     }
 
     const getData = () => {
-        fetch(`http://localhost:8080/${props.fimlType}`)
+        fetch(`http://localhost:8080/${props.filmType}`)
             .then(response => response.json())
-            .then(response => setFiml(response))
+            .then(response => setFilm(response))
             .catch(error => console.error(error))
     }
 
     const takeData = () => {
-        setFiml(props.listFiml)
+        setFilm(props.listFilm)
     }
 
-    console.log("listdata", props.listFiml)
+    // console.log("listdata", props.listFiml)
 
     useEffect(() => {
-        props.fimlType ?
+        props.filmType ?
             getData()
             :
             takeData()
     }, [props])
 
     return (
-        <div className='fimls_container'>
-            <div className='fimls-content'>
+        <div className='films-container'>
+            <div className='films-content'>
                 <div className='title'>
                     <i class="fa-solid fa-folder-open"></i>
                     <p>Phim Bộ</p>
@@ -159,22 +159,22 @@ const SeriesFiml = (props) => {
                         onClick={() => handleClick()}
                     >Lọc Phim</button>
                 </div>
-                <div className='fimlsall'>
+                <div className='filmsAll'>
                     {
                         data && data.length ?
                             data.map((item, index) => {
                                 return (
                                     <Link to={"/" + item.slug}>
-                                        <CardFiml itemPhim={item} key={index} />
+                                        <CardFilm itemFilm={item} key={index} />
                                     </Link>
                                 )
                             })
                             :
-                            fiml.map((item, index) => {
+                            film.map((item, index) => {
                                 if (index < 12) {
                                     return (
                                         <Link to={"/" + item.slug}>
-                                            <CardFiml itemPhim={item} key={index} />
+                                            <CardFilm itemFilm={item} key={index} />
                                         </Link>
                                     )
                                 }
@@ -198,4 +198,4 @@ const SeriesFiml = (props) => {
     )
 }
 
-export default SeriesFiml;
+export default SeriesFilm;

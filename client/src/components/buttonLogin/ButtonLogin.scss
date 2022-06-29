@@ -1,4 +1,4 @@
-.Button-container{
+.button-container{
     position: fixed;
     background-color: rgb(210, 204, 204);
     top: 45vh;
@@ -22,7 +22,7 @@
         }
     }
 }
-.Button-container:hover{
+.button-Container:hover{
     background-color: rgb(245, 238, 238);
     .button{
         a:hover{
@@ -41,7 +41,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .Button-container{
+    .button-Container{
         position: fixed;
         background-color: rgb(210, 204, 204);
         top: 15vh;

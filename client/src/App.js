@@ -15,7 +15,6 @@ import {
   Link
 } from "react-router-dom";
 import ButtonLogin from './components/buttonLogin/ButtonLogin';
-import Home from './components/contents/home/Home';
 
 
 function App(props) {

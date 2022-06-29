@@ -17,12 +17,12 @@ import thieunien from '../../../assets/images/thieunientudaidanhbo.jpg'
 import {
     Link
 } from "react-router-dom";
-import CardFiml from '../cardFiml/CardFiml'
+import CardFilm from '../cardFilm/CardFilm'
 
 const Home = (props) => {
 
-    const [seriesFiml, setSeriesFiml] = useState([])
-    const [oddFiml, setOddFiml] = useState([])
+    const [seriesFilm, setSeriesFilm] = useState([])
+    const [oddFilm, setOddFilm] = useState([])
     const [shows, setShows] = useState([])
     const [cartoon, setCartoon] = useState([])
 
@@ -41,12 +41,12 @@ const Home = (props) => {
     const getData = () => {
         fetch('http://localhost:8080/series')
             .then(response => response.json())
-            .then(response => setSeriesFiml(response))
+            .then(response => setSeriesFilm(response))
             .catch(error => console.error(error))
 
         fetch('http://localhost:8080/single')
             .then(response => response.json())
-            .then(response => setOddFiml(response))
+            .then(response => setOddFilm(response))
             .catch(error => console.error(error))
 
         fetch('http://localhost:8080/shows')
@@ -126,27 +126,27 @@ const Home = (props) => {
                         </Slider>
                     </div>
 
-                    <div className='home-phim'>
+                    <div className='home-film'>
                         <div className='title'>
                             <p className='title-left'>
                                 <i class="fa-solid fa-video"></i>
                                 <p>Phim Bộ Đặc Sắc</p>
                             </p>
                             <p className='title-right'>
-                                <Link to="/danhsach/phimbo">
+                                <Link to="/list/seriesFilm">
                                     <p>Xem tất cả</p>
                                     <i class="fa-solid fa-angles-right"></i>
                                 </Link>
                             </p>
                         </div>
-                        <div className='phimbo-content'>
+                        <div className='series-content'>
                             {
-                                seriesFiml && seriesFiml.length &&
-                                seriesFiml.map((item, index) => {
+                                seriesFilm && seriesFilm.length &&
+                                seriesFilm.map((item, index) => {
                                     return (
                                         index < 8 &&
                                         <Link to={"/" + item.slug}>
-                                            <CardFiml itemPhim={item} key={index} />
+                                            <CardFilm itemFilm={item} key={index} />
                                         </Link>
                                     )
                                 })
@@ -154,27 +154,27 @@ const Home = (props) => {
                         </div>
                     </div>
 
-                    <div className='home-phim'>
+                    <div className='home-film'>
                         <div className='title'>
                             <p className='title-left'>
                                 <i class="fa-solid fa-film"></i>
                                 <p>Phim Lẻ Đặc Sắc</p>
                             </p>
                             <p className='title-right'>
-                                <Link to="/danhsach/phimle">
+                                <Link to="/list/oddFilm">
                                     <p>Xem tất cả</p>
                                     <i class="fa-solid fa-angles-right"></i>
                                 </Link>
                             </p>
                         </div>
-                        <div className='phimbo-content'>
+                        <div className='series-content'>
                             {
-                                oddFiml && oddFiml.length &&
-                                oddFiml.map((item, index) => {
+                                oddFilm && oddFilm.length &&
+                                oddFilm.map((item, index) => {
                                     return (
                                         index < 8 &&
                                         <Link to={"/" + item.slug}>
-                                            <CardFiml itemPhim={item} key={index} />
+                                            <CardFilm itemFilm={item} key={index} />
                                         </Link>
                                     )
                                 })
@@ -182,27 +182,27 @@ const Home = (props) => {
                         </div>
                     </div>
 
-                    <div className='home-phim'>
+                    <div className='home-film'>
                         <div className='title'>
                             <p className='title-left'>
                                 <i class="fa-solid fa-film"></i>
                                 <p>Shows Tổng Hợp</p>
                             </p>
                             <p className='title-right'>
-                                <Link to="/danhsach/shows">
+                                <Link to="/list/shows">
                                     <p>Xem tất cả</p>
                                     <i class="fa-solid fa-angles-right"></i>
                                 </Link>
                             </p>
                         </div>
-                        <div className='phimbo-content'>
+                        <div className='series-content'>
                             {
                                 shows && shows.length &&
                                 shows.map((item, index) => {
                                     return (
                                         index < 8 &&
                                         <Link to={"/" + item.slug}>
-                                            <CardFiml itemPhim={item} key={index} />
+                                            <CardFilm itemFilm={item} key={index} />
                                         </Link>
                                     )
                                 })
@@ -210,27 +210,27 @@ const Home = (props) => {
                         </div>
                     </div>
 
-                    <div className='home-phim'>
+                    <div className='home-film'>
                         <div className='title'>
                             <p className='title-left'>
                                 <i class="fa-solid fa-baby"></i>
                                 <p>Hoạt Hình Vui Nhộn</p>
                             </p>
                             <p className='title-right'>
-                                <Link to="/danhsach/hoathinh">
+                                <Link to="/list/cartoon">
                                     <p>Xem tất cả</p>
                                     <i class="fa-solid fa-angles-right"></i>
                                 </Link>
                             </p>
                         </div>
-                        <div className='phimbo-content'>
+                        <div className='series-content'>
                             {
                                 cartoon && cartoon.length &&
                                 cartoon.map((item, index) => {
                                     return (
                                         index < 8 &&
                                         <Link to={"/" + item.slug}>
-                                            <CardFiml itemPhim={item} key={index} />
+                                            <CardFilm itemFilm={item} key={index} />
                                         </Link>
                                     )
                                 })

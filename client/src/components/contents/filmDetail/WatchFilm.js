@@ -1,7 +1,7 @@
-import './WatchFiml.scss'
+import './WatchFilm.scss'
 import cartoon from '../../../assets/audio/cartoon.mp4'
 import { useEffect, useState } from 'react';
-import Iframe from 'react-iframe'
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,9 +10,10 @@ import {
 } from "react-router-dom";
 import axios from 'axios';
 import Comment from '../comment/Comment';
+import VideoApp from './VideoApp';
 
-const WatchFiml = (props) => {
-    const [episode, setEspisode] = useState()
+const WatchFilm = (props) => {
+    const [espisode, setEspisode] = useState()
     const [espisodes, setEspisodes] = useState([]);
     const [server, setServer] = useState();
     const [comment, setComment] = useState([]);
@@ -27,19 +28,19 @@ const WatchFiml = (props) => {
     const comments = async () => {
         const getComment = await fetch('http://localhost:8080/comment');
         const com = await getComment.json();
-        const comFilter = com.filter(item => item.idfiml === props.phimz.id)
+        const comFilter = com.filter(item => item.idFilm === props.film.id)
         setComment(comFilter);
     }
 
     const CheckLogin = async () => {
-        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.phimz.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.film.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
         comments();
         setPostComment("")
         setErr(false)
     }
 
     const handleClick = async () => {
-        console.log("check>>", props.acc === "Login")
+        // console.log("check>>", props.acc === "Login")
         props.acc === "Login" ?
             setErr(true)
             :
@@ -59,7 +60,7 @@ const WatchFiml = (props) => {
     }
 
     const getData = async () => {
-        const data = await axios.post('http://localhost:8080/postData', { id: props.phimz.id });
+        const data = await axios.post('http://localhost:8080/postData', { id: props.film.id });
 
         const getE = async () => {
             const getEspisodes = await fetch('http://localhost:8080/postData/espisodes');
@@ -75,23 +76,10 @@ const WatchFiml = (props) => {
     }, [])
 
     return (
-        <div className='xemphim-conatiner'>
-            <div className='xemphim-content'>
-                <div className='main-phim'>
-                    <iframe
-                        src={episode}
-                        // src="http://localhost:8080/video/"
-                        title="Fiml MoviesTv" frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                    {/* <Iframe url={episode}
-                        width="450px"
-                        height="450px"
-                        id="myId"
-                        className="myClassname"
-                        display="initial"
-                        position="relative" /> */}
+        <div className='watchFilm-conatiner'>
+            <div className='watchFilm-content'>
+                <div className='main-film'>
+                    <VideoApp url={espisode}/>
                 </div>
                 <div className='server'>
                     <p className='first'>
@@ -103,19 +91,19 @@ const WatchFiml = (props) => {
                     </p>
                 </div>
                 <div className='name'>
-                    <p className='nametv'>
-                        {props.phimz.name}
+                    <p className='nameTv'>
+                        {props.film.name}
                     </p>
-                    <p className='nameta'>
-                        {props.phimz.origin_name}
+                    <p className='nameTa'>
+                        {props.film.origin_name}
                     </p>
                 </div>
                 <div className='episodes'>
-                    <p className='chontap'>
+                    <p className='choose'>
                         <i class="fa-solid fa-tv"></i>
                         <p>Chọn Tập</p>
                     </p>
-                    <div className='tap'>
+                    <div className='espisode'>
                         {
                             espisodes.map((item, index) => {
                                 return (
@@ -130,7 +118,7 @@ const WatchFiml = (props) => {
                     </div>
                 </div>
                 <div className='episodes'>
-                    <div className='chontap'>
+                    <div className='choose'>
                         <i class="fa-solid fa-comment"></i>
                         <p>Bình Luận</p>
                     </div>
@@ -139,14 +127,14 @@ const WatchFiml = (props) => {
                     {
                         comment.map((item, index) => {
                             return (
-                                <Comment user={item.user} id={item.idfiml} content={item.content} />
+                                <Comment user={item.user} id={item.idFilm} content={item.content} />
                             )
                         })
                     }
                 </div>
                 <div className='comments'>
                     <div className='post'>
-                        <textarea className='postcomment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
+                        <textarea className='postComment' placeholder='Post your comment...' onChange={(e) => onChangeComment(e)} value={postCommnent}></textarea>
                         <button type='button' className='button' onClick={() => handleClick()}>Post</button>
                     </div>
                     {
@@ -159,4 +147,4 @@ const WatchFiml = (props) => {
     )
 }
 
-export default WatchFiml;
+export default WatchFilm;

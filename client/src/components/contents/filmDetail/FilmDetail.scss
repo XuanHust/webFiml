@@ -1,8 +1,8 @@
-.phimdetail-container{
+.filmDetail-container{
     background-color: #1a1a1a;
     padding-top: 10px;
     padding-bottom: 10px;
-    .phimdetail-content{
+    .filmDetail-content{
         background-color: #282828;
         width: 60%;
         margin: 0 auto;
@@ -91,7 +91,7 @@
             }
         }
     }
-    .noidung-content{
+    .content-content{
         background-color: #282828;
         width: 60%;
         margin: 0 auto;
@@ -99,7 +99,7 @@
         border-radius: 5px;
         margin-bottom: 10px;
         border-top: 4px solid #ef5f06;
-        .noidung-title{
+        .content-title{
             display: flex;
             align-items: center;
             i{
@@ -114,7 +114,7 @@
             }
         }
     }
-    .noidung{
+    .content{
         background-color: #282828;
         width: 60%;
         margin: 0 auto;
@@ -143,7 +143,7 @@
         }
         .post{
             position: relative;
-            .postcomment{
+            .postComment{
                 max-width: 90%;
                 min-width: 90%;
                 min-height: 70px;
@@ -180,14 +180,14 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .phimdetail-container{
-        .phimdetail-content{
+    .filmDetail-container{
+        .filmDetail-content{
             width: 80%;
         }
-        .noidung-content{
+        .content-content{
             width: 80%;
         }
-        .noidung{
+        .content{
             width: 80%;
         }
         .comments{
@@ -196,14 +196,14 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .phimdetail-container{
+    .filmDetail-container{
         .phimdetail-content{
             width: 96%;
         }
-        .noidung-content{
+        .content-content{
             width: 96%;
         }
-        .noidung{
+        .content{
             width: 96%;
         }
         .comments{
@@ -212,8 +212,8 @@
     }
 }
 @media only screen and (max-width: 480px) {
-    .phimdetail-container{
-        .phimdetail-content{
+    .filmDetail-container{
+        .filmDetail-content{
             width: 99%;
             .main-content{
                 .main-left{
@@ -251,9 +251,9 @@
                 }
             }
         }
-        .noidung-content{
+        .content-content{
             width: 99%;
-            .noidung-title{
+            .content-title{
                 i{
                     font-size: 13px;
                 }
@@ -262,7 +262,7 @@
                 }
             }
         }
-        .noidung{
+        .content{
             width: 99%;
             p{
                 font-size: 13px;

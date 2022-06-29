@@ -5,23 +5,23 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Fimls from "../contents/fimls/Fimls";
+import Films from "../contents/films/Films";
 import Home from "../contents/home/Home";
 import "./Nav.scss"
-import FimlDetail from "../contents/fimlDetail/FimlDetail";
+import FilmDetail from "../contents/filmDetail/FilmDetail";
 import { useState, useEffect } from "react";
-import WatchFiml from "../contents/fimlDetail/WatchFiml";
+import WatchFilm from "../contents/filmDetail/WatchFilm";
 import axios from 'axios';
 
 const Nav = (props) => {
 
-    const [totalFiml, setTotalFiml] = useState([]);
-    const [fimls, setFimls] = useState([]);
+    const [totalFilm, setTotalFilm] = useState([]);
+    const [films, setFilms] = useState([]);
 
     const getData = () => {
-        fetch('http://localhost:8080/totalFiml')
+        fetch('http://localhost:8080/totalFilm')
             .then(response => response.json())
-            .then(response => setTotalFiml(response))
+            .then(response => setTotalFilm(response))
             .catch(error => console.error(error))
     }
 
@@ -29,12 +29,12 @@ const Nav = (props) => {
         let link = event.target.getAttribute("value")
         const dataFilter = await axios.post('http://localhost:8080/selectType', { type: event.target.innerText, slug: event.target.getAttribute("value") });
 
-        const getFimls = async () => {
-            const getFiml = await fetch("http://localhost:8080/selectType/:link");
-            const fiml = await getFiml.json();
-            setFimls(fiml);
+        const getFilms = async () => {
+            const getFilm = await fetch("http://localhost:8080/selectType/:link");
+            const film = await getFilm.json();
+            setFilms(film);
         }
-        getFimls();
+        getFilms();
     }
 
     useEffect(() => {
@@ -51,25 +51,25 @@ const Nav = (props) => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/danhsach/phimbo">
+                        <Link to="/list/seriesFilm">
                             <i class="fa-solid fa-video"></i>
                             <p>Phim Bộ</p>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/danhsach/phimle">
+                        <Link to="/list/oddFilm">
                             <i class="fa-solid fa-film"></i>
                             <p>Phim Lẻ</p>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/danhsach/shows">
+                        <Link to="/list/shows">
                             <i class="fa-solid fa-film"></i>
                             <p>Shows</p>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/danhsach/hoathinh">
+                        <Link to="/list/cartoon">
                             <i class="fa-solid fa-baby"></i>
                             <p>Hoạt Hình</p>
                         </Link>
@@ -120,28 +120,28 @@ const Nav = (props) => {
             </div>
 
             <Routes>
-                <Route path="/danhsach/phimbo" element={<Fimls fimlType="series" />} />
-                <Route path="danhsach/phimle" element={<Fimls fimlType="single" />} />
-                <Route path="/danhsach/shows" element={<Fimls fimlType="shows" />} />
-                <Route path="/danhsach/hoathinh" element={<Fimls fimlType="cartoon" />} />
-                <Route path="/searchActor/fimls" element={<Fimls fimlType="searchActor/fimls" />} />
-                <Route path="/selectType" element={<Fimls fimlType="" listFiml={fimls} />} />
+                <Route path="/list/seriesFilm" element={<Films filmType="series" />} />
+                <Route path="list/oddFilm" element={<Films filmType="single" />} />
+                <Route path="/list/shows" element={<Films filmType="shows" />} />
+                <Route path="/list/cartoon" element={<Films filmType="cartoon" />} />
+                <Route path="/searchActor/films" element={<Films filmType="searchActor/films" />} />
+                <Route path="/selectType" element={<Films filmType="" listFilm={films} />} />
                 <Route path="/Login" element={<Home />} />
                 <Route path="/MoviesTv" element={<Home />} />
                 {
-                    totalFiml && totalFiml.length &&
-                    totalFiml.map((item, index) => {
+                    totalFilm && totalFilm.length &&
+                    totalFilm.map((item, index) => {
                         return (
-                            <Route path={"/" + item.slug + "/movietv@"} element={<WatchFiml phimz={item} acc={props.acc} />} />
+                            <Route path={"/" + item.slug + "/movietv@"} element={<WatchFilm film={item} acc={props.acc} />} />
                         )
                     })
                 }
 
                 {
-                    totalFiml && totalFiml.length &&
-                    totalFiml.map((item, index) => {
+                    totalFilm && totalFilm.length &&
+                    totalFilm.map((item, index) => {
                         return (
-                            <Route path={"/" + item.slug} element={<FimlDetail infor={item} acc={props.acc} />} />
+                            <Route path={"/" + item.slug} element={<FilmDetail infor={item} acc={props.acc} />} />
                         )
                     })
                 }
