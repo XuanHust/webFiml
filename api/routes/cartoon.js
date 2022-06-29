@@ -17,7 +17,7 @@ connection.connect((err) => {
 })
 
 router.get("/", (req, res, next) => {
-    connection.query(`SELECT * FROM total_fimls WHERE type = "cartoon"`, (err, results) => {
+    connection.query(`SELECT * FROM total_films WHERE type = "cartoon"`, (err, results) => {
         if(err) throw err;
         // res.json({news: results});
         res.send(results);

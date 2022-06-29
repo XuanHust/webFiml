@@ -28,10 +28,10 @@ router.post("/searchActor", (req, res, next) => {
     res.send(JSON.stringify({"status": 200, "error": null}))
 });
 
-router.get("/searchActor/fimls", (req, res, next) => {
-    connection.query(`SELECT * FROM actor, total_fimls 
-    WHERE ((actor.name = "${name}") AND (total_fimls.id = actor.id)) OR (total_fimls.name = "${name}")
-    GROUP BY total_fimls.id`, (err, results) => {
+router.get("/searchActor/films", (req, res, next) => {
+    connection.query(`SELECT * FROM actor, total_films 
+    WHERE ((actor.name = "${name}") AND (total_films.id = actor.id)) OR (total_films.name = "${name}")
+    GROUP BY total_films.id`, (err, results) => {
         if(err) throw err;
         res.send(results);
     })

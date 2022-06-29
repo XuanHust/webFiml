@@ -19,18 +19,18 @@ connection.connect((err) => {
         console.log(connection)
 })
 
-router.post("/filterFiml", (req, res, next) => {
+router.post("/filterFilm", (req, res, next) => {
     let data = req.body;
     datafilter = data
     // console.log("id is", datafilter)
     res.send(JSON.stringify({ "status": 200, "error": null }))
 });
 
-router.get("/filterFiml/fimls", (req, res, next) => {
-    connection.query(`SELECT * FROM category, total_fimls 
+router.get("/filterFilm/films", (req, res, next) => {
+    connection.query(`SELECT * FROM category, total_films 
     WHERE (category.name = "${datafilter.category}") 
-    AND (total_fimls.type = "${datafilter.type}") AND (total_fimls.country = "${datafilter.nation}") AND (total_fimls.year = "${datafilter.year}") AND (category.id = total_fimls.id)
-    GROUP BY total_fimls.id`, (err, results) => {
+    AND (total_films.type = "${datafilter.type}") AND (total_films.country = "${datafilter.nation}") AND (total_films.year = "${datafilter.year}") AND (category.id = total_films.id)
+    GROUP BY total_films.id`, (err, results) => {
         if (err) throw err;
         res.send(results);
     })

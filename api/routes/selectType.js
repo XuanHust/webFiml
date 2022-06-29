@@ -28,9 +28,9 @@ router.post("/selectType", (req, res, next) => {
 
 router.get("/selectType/:slugs", (req, res, next) => {
     // console.log('req.params :>> ', req.params);
-    connection.query(`SELECT * FROM category, total_fimls 
-    WHERE (category.name = "${types}" AND total_fimls.id = category.id) OR (total_fimls.country = "${types}")
-    GROUP BY total_fimls.id`, (err, results) => {
+    connection.query(`SELECT * FROM category, total_films 
+    WHERE (category.name = "${types}" AND total_films.id = category.id) OR (total_films.country = "${types}")
+    GROUP BY total_films.id`, (err, results) => {
         if (err) throw err;
         res.send(results);
     });
