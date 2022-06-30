@@ -3,21 +3,24 @@ import "plyr-react/plyr.css";
 
 const VideoApp = (props) => {
 
-    const videoSrc = {
-        type: "video",
-        sources: [
-          {
-            // src: "https://res.cloudinary.com/xuanhust/video/upload/v1656496973/samples/WebFiml/onePiece1010_oaupqe.mp4",
-            src: props.url,
-            type: 'video/webm',
-          }
-        ]
-      };
-    // console.log(">>>>", videoSrc)
-        
-    return(
-        <Plyr source={videoSrc}/>
-    )
+  const videoSrc = {
+    type: "video",
+    sources: [
+      {
+        src: props.url,
+        type: "video/mp4"
+      }
+    ],
+    poster: "https://res.cloudinary.com/xuanhust/image/upload/v1656555977/samples/WebFiml/Op-ket-thuc-1-game4v-1645151815-49_dtpjpq.jpg"
+  };
+
+  const optionSrc = {
+    controls: ["rewind", "play", "fast-forward", "progress", "current-time", "duration", "mute", "volume", "settings", "fullscreen"]
+  }
+
+  return (
+    <Plyr source={videoSrc} options={optionSrc} />
+  )
 }
 
 export default VideoApp;

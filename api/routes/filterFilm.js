@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 const mysql = require("mysql");
 var router1 = express.Router();
+const keysToCamel = require('../models/toCamelCase');
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -10,7 +11,7 @@ const connection = mysql.createConnection({
     database: 'testdb1'
 });
 
-let datafilter = {};
+let dataFilter = {};
 
 connection.connect((err) => {
     (err) ?
@@ -21,18 +22,18 @@ connection.connect((err) => {
 
 router.post("/filterFilm", (req, res, next) => {
     let data = req.body;
-    datafilter = data
+    dataFilter = data
     // console.log("id is", datafilter)
     res.send(JSON.stringify({ "status": 200, "error": null }))
 });
 
 router.get("/filterFilm/films", (req, res, next) => {
     connection.query(`SELECT * FROM category, total_films 
-    WHERE (category.name = "${datafilter.category}") 
-    AND (total_films.type = "${datafilter.type}") AND (total_films.country = "${datafilter.nation}") AND (total_films.year = "${datafilter.year}") AND (category.id = total_films.id)
+    WHERE (category.name = "${dataFilter.category}") 
+    AND (total_films.type = "${dataFilter.type}") AND (total_films.country = "${dataFilter.nation}") AND (total_films.year = "${dataFilter.year}") AND (category.id = total_films.id)
     GROUP BY total_films.id`, (err, results) => {
         if (err) throw err;
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 

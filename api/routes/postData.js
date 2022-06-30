@@ -2,6 +2,7 @@ var express = require("express");
 var router = express.Router();
 const mysql = require("mysql");
 var router1 = express.Router();
+const keysToCamel = require('../models/toCamelCase');
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -30,7 +31,7 @@ router.get("/postData/actor", (req, res, next) => {
     connection.query(`SELECT * FROM actor WHERE id = "${id}"`, (err, results) => {
         if(err) throw err;
         // res.json({news: results});
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 
@@ -38,7 +39,7 @@ router.get("/postData/director", (req, res, next) => {
     connection.query(`SELECT * FROM director WHERE id = "${id}"`, (err, results) => {
         if(err) throw err;
         // res.json({news: results});
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 
@@ -46,7 +47,7 @@ router.get("/postData/category", (req, res, next) => {
     connection.query(`SELECT * FROM category WHERE id = "${id}"`, (err, results) => {
         if(err) throw err;
         // res.json({news: results});
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 
@@ -54,7 +55,7 @@ router.get("/postData/espisodes", (req, res, next) => {
     connection.query(`SELECT * FROM espisodes WHERE id = "${id}"`, (err, results) => {
         if(err) throw err;
         // res.json({news: results});
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 

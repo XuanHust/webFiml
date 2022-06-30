@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const mysql = require("mysql");
+const keysToCamel = require('../models/toCamelCase');
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -32,7 +33,7 @@ router.get("/account", (req, res, next) => {
     WHERE (user.user = "${user}" AND user.pass = "${pass}")
     `, (err, results) => {
         if (err) throw err;
-        res.send(results);
+        res.send(keysToCamel(results));
     });
 });
 

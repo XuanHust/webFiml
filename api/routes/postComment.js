@@ -17,7 +17,7 @@ connection.connect((err) => {
 })
 
 router.post("/postComment", (req, res, next) => {
-    connection.query(`INSERT INTO comment (user, idFilm, content, id) VALUE ("${req.body.user}", "${req.body.id}", "${req.body.comment}",  "${req.body.key}")`, (err, results) => {
+    connection.query(`INSERT INTO comment (user, id_film, content, id) VALUE ("${req.body.user}", "${req.body.id}", "${req.body.comment}",  "${req.body.key}")`, (err, results) => {
         if (err) throw err;
         console.log("Post Comment Successed!")
         res.send(JSON.stringify({ "status": 200, "error": null }));

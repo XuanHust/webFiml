@@ -1,6 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const mysql = require("mysql");
+const keysToCamel = require('../models/toCamelCase');
 
 const connection = mysql.createConnection({
     host: 'localhost',
@@ -33,7 +34,7 @@ router.get("/searchActor/films", (req, res, next) => {
     WHERE ((actor.name = "${name}") AND (total_films.id = actor.id)) OR (total_films.name = "${name}")
     GROUP BY total_films.id`, (err, results) => {
         if(err) throw err;
-        res.send(results);
+        res.send(keysToCamel(results));
     })
 });
 

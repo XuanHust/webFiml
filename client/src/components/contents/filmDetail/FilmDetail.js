@@ -78,7 +78,7 @@ const FilmDetail = (props) => {
                 <div className='main-content'>
                     <div className='main-left'>
                         <p className='img'>
-                            <img src={props.infor.thumb_url} alt={props.infor.id}></img>
+                            <img src={props.infor.thumbUrl} alt={props.infor.id}></img>
                         </p>
                         <button type='button'>
                             <Link to={"/" + props.infor.slug + "/movietv@"}>
@@ -90,15 +90,15 @@ const FilmDetail = (props) => {
                     <div className='main-right'>
                         <p className='title-main'>
                             <h2 className='title'>{props.infor.name}</h2>
-                            <h2 className='subtitle'>{props.infor.origin_name}</h2>
+                            <h2 className='subtitle'>{props.infor.originName}</h2>
                         </p>
                         <p className='infor'>
                             <p className='infor-left'>Trạng thái</p>
-                            <p className='infor-right'>{props.infor.episode_current}</p>
+                            <p className='infor-right'>{props.infor.episodeCurrent}</p>
                         </p>
                         <p className='infor'>
                             <p className='infor-left'>Số tập</p>
-                            <p className='infor-right'>{props.infor.episode_total}</p>
+                            <p className='infor-right'>{props.infor.episodeTotal}</p>
                         </p>
                         <p className='infor'>
                             <p className='infor-left'>Thời lượng</p>

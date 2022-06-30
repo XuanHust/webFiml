@@ -1,7 +1,6 @@
 import './WatchFilm.scss'
 import cartoon from '../../../assets/audio/cartoon.mp4'
 import { useEffect, useState } from 'react';
-
 import {
     BrowserRouter as Router,
     Routes,
@@ -55,7 +54,7 @@ const WatchFilm = (props) => {
     const data1 = (espisod) => {
         setEspisodes(espisod);
         setEspisode(espisod[0].link)
-        setServer(espisod[0].server_name)
+        setServer(espisod[0].serverName)
 
     }
 
@@ -95,7 +94,7 @@ const WatchFilm = (props) => {
                         {props.film.name}
                     </p>
                     <p className='nameTa'>
-                        {props.film.origin_name}
+                        {props.film.originName}
                     </p>
                 </div>
                 <div className='episodes'>
