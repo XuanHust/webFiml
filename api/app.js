@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var cors = require('cors');
+require("dotenv").config();
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -27,7 +28,7 @@ var creAcc = require('./routes/creAcc');
 var comments = require('./routes/comment');
 var postComment = require('./routes/postComment');
 var booksRouter = require('./routes/admin');
-// var video = require('./routes/video');
+var verifyToken = require("./models/authenticateToken");
 
 var app = express();
 
@@ -42,7 +43,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+// app.use("*", [verifyToken]);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/testApi", testApiRouter);

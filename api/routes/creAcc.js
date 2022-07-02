@@ -1,32 +1,23 @@
 var express = require("express");
 var router = express.Router();
-const mysql = require("mysql");
+const db = require("../models/connectDataBase");
+const bcrypt = require("bcrypt");
+const generateAccessToken = require("../models/generateAccessToken");
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456789',
-    database: 'testdb1'
-});
 
-let user = "";
-let pass = "";
+router.post("/creAcc", async (req, res, next) => {
+    let user = req.body.user;
+    let pass = req.body.pass;
 
-connection.connect((err) => {
-    (err) ?
-        console.log(err)
-        :
-        console.log(connection)
-})
+    encruptedPassword = await bcrypt.hash(pass, 10);
 
-router.post("/creAcc", (req, res, next) => {
-    user = req.body.user;
-    pass = req.body.pass;
-    connection.query(`INSERT INTO user (user, pass, status) VALUE ("${user}", "${pass}", "true")`, (err, results) => {
+    db.query(`INSERT INTO user (user, pass, status) VALUE ("${user}", "${encruptedPassword}", "true")`, (err, results) => {
         if (err) throw err;
-        console.log("Create Successed!")
-        res.send(JSON.stringify({ "status": 200, "error": null }));
+        console.log("Create Successed!");
+        const token = generateAccessToken({ username: req.body.user });
+        res.status(201).json(token);
     });
+
 });
 
 module.exports = router;

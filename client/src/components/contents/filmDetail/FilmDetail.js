@@ -1,9 +1,9 @@
-import './FilmDetail.scss'
+import './FilmDetail.scss';
 import {
     Link
 } from "react-router-dom";
 import { useEffect, useState } from 'react';
-import axios from 'axios'
+import axios from 'axios';
 import Comment from '../comment/Comment';
 
 
@@ -12,37 +12,52 @@ const FilmDetail = (props) => {
     const [director, setDirector] = useState([]);
     const [category, setCategory] = useState([]);
     const [comment, setComment] = useState([]);
-    const [postCommnent, setPostComment] = useState("")
-    const [err, setErr] = useState(false)
+    const [postCommnent, setPostComment] = useState("");
+    const [err, setErr] = useState(false);
+    const [token, setToken] = useState();
 
     const onChangeComment = (e) => {
-        setPostComment(e.target.value)
+        setPostComment(e.target.value);
     }
 
     const comments = async () => {
         const getComment = await fetch('http://localhost:8080/comment');
         const com = await getComment.json();
-        const comFilter = com.filter(item => item.idFilm === props.infor.id)
+        const comFilter = com.filter(item => item.idFilm === props.infor.id);
         setComment(comFilter);
     }
 
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Beaer ${token}`
+    }
+
     const CheckLogin = async () => {
-        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.infor.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        const data = await axios.post('http://localhost:8080/postComment',
+            {
+                user: props.acc,
+                id: props.infor.id,
+                comment: postCommnent,
+                key: (Math.random() + 1).toString(36).substring(2)
+            },
+            {
+                headers: headers
+            });
         comments();
-        setPostComment("")
-        setErr(false)
+        setPostComment("");
+        setErr(false);
     }
 
     const handleClick = async () => {
-        // console.log("check>>", props.acc === "Login")
         props.acc === "Login" ?
             setErr(true)
             :
-            CheckLogin()
+            CheckLogin();
 
     }
 
     const getData = async () => {
+        setToken(sessionStorage.getItem(`"${props.acc}"`));
         const data = await axios.post('http://localhost:8080/postData', { id: props.infor.id });
 
         const getA = async () => {
@@ -83,7 +98,7 @@ const FilmDetail = (props) => {
                         <button type='button'>
                             <Link to={"/" + props.infor.slug + "/movietv@"}>
                                 <i class="fa-solid fa-play"></i>
-                                <p>Watch film</p>
+                                <p>Xem Phim</p>
                             </Link>
                         </button>
                     </div>

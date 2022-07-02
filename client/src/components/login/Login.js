@@ -1,5 +1,5 @@
-import "./Login.scss"
-import { useEffect, useState } from "react"
+import "./Login.scss";
+import { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,80 +12,81 @@ import axios from "axios";
 const Login = (props) => {
 
   const [currentView, setCurrentView] = useState("signUp");
-  const [user, setUser] = useState("")
-  const [pass, setPass] = useState("")
-  const [err, setErr] = useState(false)
-  const [errCre, setErrCre] = useState(false)
+  const [user, setUser] = useState("");
+  const [pass, setPass] = useState("");
+  const [isErr, setIsErr] = useState(false);
+  const [errCre, setErrCre] = useState(false);
 
-  const [creUser, setCreUser] = useState("")
-  const [crePass, setCrePass] = useState("")
+  const [creUser, setCreUser] = useState("");
+  const [crePass, setCrePass] = useState("");
+
+  const [err, setErr] = useState();
 
   const handleCreUser = (e) => {
     setCreUser(e.target.value);
   }
 
   const handleCrePass = (e) => {
-    setCrePass(e.target.value)
+    setCrePass(e.target.value);
   }
 
   const createAcc = async (view, acc) => {
-    setCurrentView(view)
+    setCurrentView(view);
     const data = await axios.post('http://localhost:8080/creAcc', { user: acc.user, pass: acc.pass });
   }
 
   const postAcc = async (acc, view) => {
-    const data = await fetch("http://localhost:8080/allUser")
+    const data = await fetch("http://localhost:8080/allUser");
     const dataAcc = await data.json();
     const test = dataAcc.filter((item, index) => {
-      return item.user === acc.user
+      return item.user === acc.user;
     })
     test.length !== 0 || (acc.user === "" || acc.pass === "") ?
       setErrCre(true)
       :
-      createAcc(view, acc)
+      createAcc(view, acc);
   }
 
   const handleCre = (view) => {
-    setErr(false)
+    setIsErr(false);
     let creAccount = {
       user: creUser,
       pass: crePass,
     }
-    postAcc(creAccount, view)
+    postAcc(creAccount, view);
   }
 
   const changeView = (view) => {
     setCurrentView(view);
-    setErr(false)
-    setErrCre(false)
+    setIsErr(false);
+    setErrCre(false);
   }
 
   const handleUser = (e) => {
-    setUser(e.target.value)
+    setUser(e.target.value);
   }
 
   const handlePass = (e) => {
-    setPass(e.target.value)
+    setPass(e.target.value);
   }
 
   const Acc = (acc) => {
-    props.handleLogin(acc, false)
-    setErr(false)
+    props.handleLogin(acc, false);
+    setIsErr(false);
   }
 
-  const setErrors = () => {
-    setErr(true)
+  const setErrors = (msg) => {
+    setIsErr(true);
+    setErr(msg);
   }
 
   const validate = async (account) => {
     const dataFilter = await axios.post('http://localhost:8080/account', { user: account.user, pass: account.pass });
-    const data = await fetch("http://localhost:8080/account");
-    const dataUser = await data.json();
-    const accounts = [...dataUser]
-    accounts.length >= 1 && accounts[0].user ?
-      Acc(accounts[0].user)
+    sessionStorage.setItem(`"${dataFilter.data.user}"`, `${dataFilter.data.token}`);
+    dataFilter.data.err ?
+      setErrors(dataFilter.data.msg)
       :
-      setErrors()
+      Acc(dataFilter.data.user);
   }
 
   const handleClick = () => {
@@ -93,7 +94,7 @@ const Login = (props) => {
       user: user,
       pass: pass,
     }
-    validate(account)
+    validate(account);
   }
 
   const currentViews = () => {
@@ -120,7 +121,7 @@ const Login = (props) => {
               </ul>
               {
                 errCre &&
-                <p className="err">Account already exists!</p>
+                <p className="isErr">Account already exists!</p>
               }
             </fieldset>
             <button type="button" onClick={() => handleCre("logIn")}>Submit</button>
@@ -149,8 +150,8 @@ const Login = (props) => {
                 </li>
               </ul>
               {
-                err &&
-                <p className="err">Account password is incorrect!</p>
+                isErr &&
+                <p className="err">{err}</p>
               }
             </fieldset>
             <button type="button" onClick={() => handleClick()} className="button">Login</button>

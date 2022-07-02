@@ -13,6 +13,7 @@
     "bootstrap": "^5.2.0-beta1",
     "cors": "^2.8.5",
     "gh-pages": "^3.2.3",
+    "jwt-decode": "^3.1.2",
     "moment": "^2.29.3",
     "plyr-react": "^5.0.2",
     "react": "^18.2.0",

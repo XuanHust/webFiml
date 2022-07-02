@@ -10,34 +10,30 @@ import {
 
 const SeriesFilm = (props) => {
 
-    const [sort, setSort] = useState("--Sắp xếp--")
-    const [category, setCategory] = useState("--Thể loại--")
-    const [nation, setNation] = useState("--Quốc gia--")
-    const [year, setYear] = useState("--Năm--")
-    const [film, setFilm] = useState([])
-    const [data, setData] = useState()
+    const [sort, setSort] = useState("--Sắp xếp--");
+    const [category, setCategory] = useState("--Thể loại--");
+    const [nation, setNation] = useState("--Quốc gia--");
+    const [year, setYear] = useState("--Năm--");
+    const [film, setFilm] = useState([]);
+    const [data, setData] = useState();
 
     const handleSort = (event) => {
-        setSort(event.target.value)
+        setSort(event.target.value);
     }
     const handleCategory = (event) => {
-        setCategory(event.target.value)
+        setCategory(event.target.value);
     }
     const handleNation = (event) => {
-        setNation(event.target.value)
+        setNation(event.target.value);
     }
     const handleYear = (event) => {
-        setYear(event.target.value)
+        setYear(event.target.value);
     }
 
     const handleFilter = async (filter) => {
         const dataFilter = await axios.post('http://localhost:8080/filterFilm', filter);
-        const getFilms = async () => {
-            const getFilm = await fetch('http://localhost:8080/filterFilm/films');
-            const film = await getFilm.json();
-            setFilm(film);
-        }
-        getFilms();
+        setFilm(dataFilter.data);
+        setData([]);
     }
     const handleClick = () => {
         const filter = {
@@ -49,44 +45,44 @@ const SeriesFilm = (props) => {
         handleFilter(filter);
     }
 
-    const numberOfFilm = film.length
-    const filmOfPage = 12
-    const numberOfPage = Math.ceil(numberOfFilm / filmOfPage)
-    let page = []
-    let dataOfPage = []
+    const numberOfFilm = film.length;
+    const filmOfPage = 12;
+    const numberOfPage = Math.ceil(numberOfFilm / filmOfPage);
+    let page = [];
+    let dataOfPage = [];
     for (let i = 0; i < numberOfPage; i++) {
-        page = [...page, i + 1]
+        page = [...page, i + 1];
     }
     const handlePage = (number) => {
-        dataOfPage = []
-        let maxNumber = filmOfPage * number
+        dataOfPage = [];
+        let maxNumber = filmOfPage * number;
         if (filmOfPage * number > film.length) {
-            maxNumber = film.length
+            maxNumber = film.length;
         }
         for (let j = filmOfPage * (number - 1); j < maxNumber; j++) {
-            dataOfPage = [...dataOfPage, film[j]]
+            dataOfPage = [...dataOfPage, film[j]];
         }
-        setData(dataOfPage)
+        setData(dataOfPage);
     }
 
     const getData = () => {
+        setData([]);
+        // setFilm([]);
         fetch(`http://localhost:8080/${props.filmType}`)
             .then(response => response.json())
             .then(response => setFilm(response))
-            .catch(error => console.error(error))
     }
 
     const takeData = () => {
-        setFilm(props.listFilm)
+        setFilm(props.listFilm);
+        setData([]);
     }
-
-    // console.log("listdata", props.listFiml)
 
     useEffect(() => {
         props.filmType ?
             getData()
             :
-            takeData()
+            takeData();
     }, [props])
 
     return (

@@ -1,6 +1,5 @@
-import "./ButtonLogin.scss"
+import "./ButtonLogin.scss";
 import { useEffect, useState } from "react";
-
 import {
     BrowserRouter as Router,
     Routes,
@@ -10,11 +9,12 @@ import {
 
 const ButtonLogin = (props) => {
 
-    const [flag, setFlag] = useState(true)
+    const [flag, setFlag] = useState(true);
 
     const handleClick = () => {
         props.handleLogin("", flag);
         let setFlags = !flag;
+        sessionStorage.clear();
         setFlag(setFlags);
     }
 

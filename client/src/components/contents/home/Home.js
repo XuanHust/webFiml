@@ -1,30 +1,28 @@
-import './Home.scss'
+import './Home.scss';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useState } from 'react'
-
-import truonghanhca from '../../../assets/images/truonghanhca.jpg'
-import ngocrong from '../../../assets/images/7vienngocrong.jpg'
-import chienbinhmuadong from '../../../assets/images/chienbinhmuadong.jpg'
-import chuatechiecnhan from '../../../assets/images/chuatechiecnhan.jpg'
-import kingsman from '../../../assets/images/kingsman.jpg'
-import loki1 from '../../../assets/images/loki1.jpg'
-import minhlan from '../../../assets/images/minhlan.jpg'
-import trutien2 from '../../../assets/images/trutien2.jpg'
-import thieunien from '../../../assets/images/thieunientudaidanhbo.jpg'
-
+import { useEffect, useState } from 'react';
+import truonghanhca from '../../../assets/images/truonghanhca.jpg';
+import ngocrong from '../../../assets/images/7vienngocrong.jpg';
+import chienbinhmuadong from '../../../assets/images/chienbinhmuadong.jpg';
+import chuatechiecnhan from '../../../assets/images/chuatechiecnhan.jpg';
+import kingsman from '../../../assets/images/kingsman.jpg';
+import loki1 from '../../../assets/images/loki1.jpg';
+import minhlan from '../../../assets/images/minhlan.jpg';
+import trutien2 from '../../../assets/images/trutien2.jpg';
+import thieunien from '../../../assets/images/thieunientudaidanhbo.jpg';
 import {
     Link
 } from "react-router-dom";
-import CardFilm from '../cardFilm/CardFilm'
+import CardFilm from '../cardFilm/CardFilm';
 
 const Home = (props) => {
 
-    const [seriesFilm, setSeriesFilm] = useState([])
-    const [oddFilm, setOddFilm] = useState([])
-    const [shows, setShows] = useState([])
-    const [cartoon, setCartoon] = useState([])
+    const [seriesFilm, setSeriesFilm] = useState([]);
+    const [oddFilm, setOddFilm] = useState([]);
+    const [shows, setShows] = useState([]);
+    const [cartoon, setCartoon] = useState([]);
 
     const banner = [
         { id: "627212013a2c0c6289bb9cd7", url: truonghanhca, slug: "truong-ca-hanh" },

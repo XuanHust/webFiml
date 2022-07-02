@@ -26,7 +26,7 @@ const Nav = (props) => {
     }
 
     const handleClick = async (event) => {
-        let link = event.target.getAttribute("value")
+        let link = event.target.getAttribute("value");
         const dataFilter = await axios.post('http://localhost:8080/selectType', { type: event.target.innerText, slug: event.target.getAttribute("value") });
 
         const getFilms = async () => {

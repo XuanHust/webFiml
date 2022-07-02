@@ -1,5 +1,5 @@
-import './WatchFilm.scss'
-import cartoon from '../../../assets/audio/cartoon.mp4'
+import './WatchFilm.scss';
+import cartoon from '../../../assets/audio/cartoon.mp4';
 import { useEffect, useState } from 'react';
 import {
     BrowserRouter as Router,
@@ -12,55 +12,68 @@ import Comment from '../comment/Comment';
 import VideoApp from './VideoApp';
 
 const WatchFilm = (props) => {
-    const [espisode, setEspisode] = useState()
+    const [espisode, setEspisode] = useState();
     const [espisodes, setEspisodes] = useState([]);
     const [server, setServer] = useState();
     const [comment, setComment] = useState([]);
-    const [postCommnent, setPostComment] = useState("")
-    const [err, setErr] = useState(false)
-
+    const [postCommnent, setPostComment] = useState("");
+    const [err, setErr] = useState(false);
+    const [token, setToken] = useState();
 
     const onChangeComment = (e) => {
-        setPostComment(e.target.value)
+        setPostComment(e.target.value);
     }
 
     const comments = async () => {
         const getComment = await fetch('http://localhost:8080/comment');
         const com = await getComment.json();
-        const comFilter = com.filter(item => item.idFilm === props.film.id)
+        const comFilter = com.filter(item => item.idFilm === props.film.id);
         setComment(comFilter);
     }
 
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Beaer ${token}`
+    }
+
     const CheckLogin = async () => {
-        const data = await axios.post('http://localhost:8080/postComment', { user: props.acc, id: props.film.id, comment: postCommnent, key: (Math.random() + 1).toString(36).substring(2) });
+        const data = await axios.post('http://localhost:8080/postComment',
+            {
+                user: props.acc,
+                id: props.film.id,
+                comment: postCommnent,
+                key: (Math.random() + 1).toString(36).substring(2)
+            },
+            {
+                headers: headers
+            });
+
         comments();
-        setPostComment("")
-        setErr(false)
+        setPostComment("");
+        setErr(false);
     }
 
     const handleClick = async () => {
-        // console.log("check>>", props.acc === "Login")
         props.acc === "Login" ?
             setErr(true)
             :
-            CheckLogin()
-
+            CheckLogin();
     }
 
     const handleEpisode = (slug, item) => {
-        setEspisode(item)
+        setEspisode(item);
     }
 
     const data1 = (espisod) => {
         setEspisodes(espisod);
-        setEspisode(espisod[0].link)
-        setServer(espisod[0].serverName)
+        setEspisode(espisod[0].link);
+        setServer(espisod[0].serverName);
 
     }
 
     const getData = async () => {
+        setToken(sessionStorage.getItem(`"${props.acc}"`));
         const data = await axios.post('http://localhost:8080/postData', { id: props.film.id });
-
         const getE = async () => {
             const getEspisodes = await fetch('http://localhost:8080/postData/espisodes');
             const espisod = await getEspisodes.json();
@@ -78,7 +91,7 @@ const WatchFilm = (props) => {
         <div className='watchFilm-conatiner'>
             <div className='watchFilm-content'>
                 <div className='main-film'>
-                    <VideoApp url={espisode}/>
+                    <VideoApp url={espisode} />
                 </div>
                 <div className='server'>
                     <p className='first'>

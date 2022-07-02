@@ -1,40 +1,37 @@
 var express = require("express");
 var router = express.Router();
-const mysql = require("mysql");
 const keysToCamel = require('../models/toCamelCase');
+const db = require('../models/connectDataBase');
+const bcrypt = require("bcrypt");
+const generateAccessToken = require("../models/generateAccessToken");
 
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456789',
-    database: 'testdb1'
-});
+const validate = (req, res, result) => {
+    if (result[0]?.user && (bcrypt.compare(req.body.pass, result[0].pass))) {
+        const token = generateAccessToken({ username: req.body.user });
+        const data = {
+            err: false,
+            user: req.body.user,
+            token: token
+        }
+        res.status(200).json(data);
+    } else {
+        res.status(200).send({ err: true, msg: "Invalid Credentials !" });
+    }
+}
 
-let user = "";
-let pass = "";
+router.post("/account", async (req, res, next) => {
+    let user = req.body.user;
+    let pass = req.body.pass;
 
-connection.connect((err) => {
-    (err) ?
-        console.log(err)
-        :
-        console.log(connection)
-})
-
-router.post("/account", (req, res, next) => {
-    user = req.body.user;
-    pass = req.body.pass;
-    // console.log("data", user)
-    res.send(JSON.stringify({ "status": 200, "error": null }));
-});
-
-router.get("/account", (req, res, next) => {
-    console.log("data", user)
-    connection.query(`SELECT * FROM user 
-    WHERE (user.user = "${user}" AND user.pass = "${pass}")
-    `, (err, results) => {
-        if (err) throw err;
-        res.send(keysToCamel(results));
-    });
+    if (!(user && pass)) {
+        res.status(200).send({ err: true, msg: "All input is required !" });
+    } else {
+        db.query(`SELECT * FROM user 
+        WHERE (user.user = "${user}")`, (err, results) => {
+            if (err) throw err;
+            validate(req, res, results);
+        });
+    }
 });
 
 module.exports = router;

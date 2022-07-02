@@ -1,39 +1,17 @@
 var express = require("express");
 var router = express.Router();
-const mysql = require("mysql");
-var router1 = express.Router();
+const db = require("../models/connectDataBase");
 const keysToCamel = require('../models/toCamelCase');
-
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '123456789',
-    database: 'testdb1'
-});
-
-let dataFilter = {};
-
-connection.connect((err) => {
-    (err) ?
-        console.log(err)
-        :
-        console.log(connection)
-})
 
 router.post("/filterFilm", (req, res, next) => {
     let data = req.body;
-    dataFilter = data
-    // console.log("id is", datafilter)
-    res.send(JSON.stringify({ "status": 200, "error": null }))
-});
 
-router.get("/filterFilm/films", (req, res, next) => {
-    connection.query(`SELECT * FROM category, total_films 
-    WHERE (category.name = "${dataFilter.category}") 
-    AND (total_films.type = "${dataFilter.type}") AND (total_films.country = "${dataFilter.nation}") AND (total_films.year = "${dataFilter.year}") AND (category.id = total_films.id)
+    db.query(`SELECT * FROM category, total_films 
+    WHERE (category.name = "${data.category}") 
+    AND (total_films.type = "${data.type}") AND (total_films.country = "${data.nation}") AND (total_films.year = "${data.year}") AND (category.id = total_films.id)
     GROUP BY total_films.id`, (err, results) => {
         if (err) throw err;
-        res.send(keysToCamel(results));
+        res.status(200).json(keysToCamel(results));
     })
 });
 
