@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit Film</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body class="container" style="margin-top: 50px;">
+
+
+    <div class="card">
+        <div class="card-header">
+            Edit Film
+        </div>
+        <div class="card-body">
+            <form action="/film/update/<%= id %>" method="post">
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="name" value="<%= name %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Origin Name:</label>
+                    <input type="text" class="form-control" name="originName" value="<%= originName %>"
+                        autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Content:</label>
+                    <input type="text" class="form-control" name="content" value="<%= content %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Type:</label>
+                    <input type="text" class="form-control" name="type" value="<%= type %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Status:</label>
+                    <input type="text" class="form-control" name="status" value="<%= status %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Time:</label>
+                    <input type="text" class="form-control" name="time" value="<%= time %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Espisode Current:</label>
+                    <input type="text" class="form-control" name="episodeCurrent" value="<%= episodeCurrent %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Espisode Total:</label>
+                    <input type="text" class="form-control" name="episodeTotal" value="<%= episodeTotal %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Quality:</label>
+                    <input type="text" class="form-control" name="quality" value="<%= quality %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Lang:</label>
+                    <input type="text" class="form-control" name="lang" value="<%= lang %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Slug:</label>
+                    <input type="text" class="form-control" name="slug" value="<%= slug %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Year:</label>
+                    <input type="text" class="form-control" name="year" value="<%= year %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label>Country:</label>
+                    <input type="text" class="form-control" name="country" value="<%= country %>" autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-info" value="Update" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

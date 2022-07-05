@@ -27,8 +27,9 @@ var allUser = require('./routes/allUser');
 var creAcc = require('./routes/creAcc');
 var comments = require('./routes/comment');
 var postComment = require('./routes/postComment');
-var booksRouter = require('./routes/admin');
+var usersRouter = require('./routes/admin');
 var verifyToken = require("./models/authenticateToken");
+var filmRouter = require("./routes/film");
 
 var app = express();
 
@@ -44,6 +45,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // app.use("*", [verifyToken]);
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/testApi", testApiRouter);
@@ -65,7 +67,8 @@ app.use(allUser);
 app.use(creAcc);
 app.use(comments);
 app.use(postComment);
-app.use('/admin', booksRouter);
+app.use('/admin', usersRouter);
+app.use('/film', filmRouter);
 app.use('/video', (req, res) => {
   res.sendFile('assets/video/cartoon.mp4', {root: __dirname})
 });
