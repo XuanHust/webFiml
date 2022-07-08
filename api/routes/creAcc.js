@@ -8,7 +8,7 @@ const generateAccessToken = require("../models/generateAccessToken");
 router.post("/creAcc", async (req, res, next) => {
     let user = req.body.user;
     let pass = req.body.pass;
-
+    
     encruptedPassword = await bcrypt.hash(pass, 10);
 
     db.query(`INSERT INTO user (user, pass, status) VALUE ("${user}", "${encruptedPassword}", "true")`, (err, results) => {

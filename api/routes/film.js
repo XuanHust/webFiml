@@ -4,6 +4,7 @@ const db = require("../models/connectDataBase");
 const cloudinary = require('cloudinary').v2;
 require('dotenv').config();
 const formidable = require('formidable');
+const slugify = require('slugify')
 
 cloudinary.config({
     cloud_name: process.env.CLOUD_NAME,
@@ -57,7 +58,6 @@ router.post('/add', function (req, res, next) {
     let form = new formidable.IncomingForm();
     form.parse(req, function (err, fields, files) {
         let { name, originName, content, type, status, time, episodeCurrent, episodeTotal, quality, lang, slug, year, country, nameActor, nameDirector, category, nameServer, espisode, thumbUrl, file } = fields;
-        let id = (Math.random() + 1).toString(36).substring(2);
         let errors = false;
 
         if (name.length === 0 || originName.length === 0 || content.length === 0 || type.length === 0 || status === 0 || thumbUrl === 0 || episodeCurrent === 0 || episodeTotal === 0 || quality === 0 || lang === 0 || slug == 0 || year === 0 || country === 0 || file === 0) {
@@ -88,7 +88,6 @@ router.post('/add', function (req, res, next) {
 
         if (!errors) {
             let form_data = {
-                id: id,
                 name: name,
                 originName: originName,
                 content: content,
@@ -100,7 +99,14 @@ router.post('/add', function (req, res, next) {
                 episodeTotal: episodeTotal,
                 quality: quality,
                 lang: lang,
-                slug: slug,
+                slug: slugify(slug, {
+                    replacement: '-',
+                    remove: undefined,
+                    lower: true,
+                    strict: false,
+                    locale: 'vi',
+                    trim: true
+                }),
                 year: year,
                 country: country,
                 nameActor: nameActor,
@@ -117,6 +123,7 @@ router.post('/add', function (req, res, next) {
                     eager: [{ streaming_profile: "full_hd", format: "m3u8" }],
                     eager_async: true,
                 })
+                console.log(">>>>", linkVideo)
                 form_data = { ...form_data, linkVideo }
                 const linkThumb = await cloudinary.uploader.upload(form_data.thumbUrl);
                 form_data = { ...form_data, linkThumb }
@@ -148,7 +155,7 @@ router.post('/add', function (req, res, next) {
                 VALUE ("${form_data.linkVideo.asset_id}",
                 "${form_data.nameServer}",
                 "${form_data.espisode}",
-                "${form_data.linkVideo.url}")`)
+                "${form_data.linkVideo.eager[0].url}")`)
 
                 res.redirect('/film');
             }
@@ -245,7 +252,14 @@ router.post('/update/:id', function (req, res, next) {
             episodeTotal: episodeTotal,
             quality: quality,
             lang: lang,
-            slug: slug,
+            slug: slugify(slug, {
+                replacement: '-',
+                remove: undefined,
+                lower: true,
+                strict: false,
+                locale: 'vi',
+                trim: true
+            }),
             year: year,
             country: country,
         }

@@ -57,7 +57,7 @@ const FilmDetail = (props) => {
     }
 
     const getData = async () => {
-        setToken(sessionStorage.getItem(`"${props.acc}"`));
+        setToken(localStorage.getItem(props.acc));
         const data = await axios.post('http://localhost:8080/postData', { id: props.infor.id });
 
         const getA = async () => {

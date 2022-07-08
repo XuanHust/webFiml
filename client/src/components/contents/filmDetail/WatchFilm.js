@@ -10,6 +10,7 @@ import {
 import axios from 'axios';
 import Comment from '../comment/Comment';
 import VideoApp from './VideoApp';
+import ReactHlsPlayer from 'react-hls-player';
 
 const WatchFilm = (props) => {
     const [espisode, setEspisode] = useState();
@@ -72,7 +73,7 @@ const WatchFilm = (props) => {
     }
 
     const getData = async () => {
-        setToken(sessionStorage.getItem(`"${props.acc}"`));
+        setToken(localStorage.getItem(props.acc));
         const data = await axios.post('http://localhost:8080/postData', { id: props.film.id });
         const getE = async () => {
             const getEspisodes = await fetch('http://localhost:8080/postData/espisodes');
@@ -91,7 +92,20 @@ const WatchFilm = (props) => {
         <div className='watchFilm-conatiner'>
             <div className='watchFilm-content'>
                 <div className='main-film'>
-                    <VideoApp url={espisode} />
+                    {/* <VideoApp url={espisode} /> */}
+                    <ReactHlsPlayer
+                        src={espisode}
+                        autoPlay={false}
+                        controls={true}
+                        width="100%"
+                        height="auto"
+                        poster='https://res.cloudinary.com/xuanhust/image/upload/v1656555977/samples/WebFiml/Op-ket-thuc-1-game4v-1645151815-49_dtpjpq.jpg'
+                        hlsConfig={{
+                            maxLoadingDelay: 4,
+                            minAutoBitrate: 0,
+                            lowLatencyMode: true,
+                        }}
+                    />
                 </div>
                 <div className='server'>
                     <p className='first'>

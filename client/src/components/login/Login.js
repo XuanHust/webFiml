@@ -1,4 +1,5 @@
 import "./Login.scss";
+import logo from "../../assets/images/2659939281579738432-512.png"
 import { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
@@ -8,6 +9,9 @@ import {
 } from "react-router-dom";
 import React from "react";
 import axios from "axios";
+import { useGoogleLogin, useGoogleLogout } from 'react-google-login';
+
+const clientId = "781604133955-5vnqd8or7cev1jbloil96ossd4upl6av.apps.googleusercontent.com"
 
 const Login = (props) => {
 
@@ -21,6 +25,8 @@ const Login = (props) => {
   const [crePass, setCrePass] = useState("");
 
   const [err, setErr] = useState();
+
+  const [log, setLog] = useState(false)
 
   const handleCreUser = (e) => {
     setCreUser(e.target.value);
@@ -82,7 +88,7 @@ const Login = (props) => {
 
   const validate = async (account) => {
     const dataFilter = await axios.post('http://localhost:8080/account', { user: account.user, pass: account.pass });
-    sessionStorage.setItem(`"${dataFilter.data.user}"`, `${dataFilter.data.token}`);
+    localStorage.setItem(dataFilter.data.user, `${dataFilter.data.token}`);
     dataFilter.data.err ?
       setErrors(dataFilter.data.msg)
       :
@@ -96,6 +102,60 @@ const Login = (props) => {
     }
     validate(account);
   }
+
+  //Google
+
+  const createAccGoogle = async (acc) => {
+    const data = await axios.post('http://localhost:8080/creAcc', { user: acc.user, pass: acc.pass });
+    validate(acc);
+  }
+
+  const postAccGoogle = async (acc) => {
+    const data = await fetch("http://localhost:8080/allUser");
+    const dataAcc = await data.json();
+    const test = dataAcc.filter((item, index) => {
+      return item.user === acc.user;
+    })
+    test.length !== 0 || (acc.user === "" || acc.pass === "") ?
+      validate(acc)
+      :
+      createAccGoogle(acc);
+  }
+
+
+  const onSuccess = (res) => {
+    setLog(true);
+    let account = {
+      user: res.profileObj.givenName,
+      pass: res.profileObj.googleId,
+    }
+    postAccGoogle(account);
+
+    console.log('Login Success: ', res.profileObj);
+  }
+
+  const onFailure = (res) => {
+    console.log("Login Failed:", res)
+  }
+
+  const onLogoutSuccess = () => {
+    setLog(false)
+    console.log("Logout Success")
+  }
+
+  const { signIn } = useGoogleLogin({
+    onSuccess,
+    onFailure,
+    clientId,
+    isSignedIn: true,
+    accessType: 'offline',
+  })
+
+  const { signOut } = useGoogleLogout({
+    clientId,
+    onLogoutSuccess,
+  })
+
 
   const currentViews = () => {
     switch (currentView) {
@@ -121,7 +181,7 @@ const Login = (props) => {
               </ul>
               {
                 errCre &&
-                <p className="isErr">Account already exists!</p>
+                <p className="err">Account already exists!</p>
               }
             </fieldset>
             <button type="button" onClick={() => handleCre("logIn")}>Submit</button>
@@ -154,6 +214,19 @@ const Login = (props) => {
                 <p className="err">{err}</p>
               }
             </fieldset>
+            {
+              log ?
+
+                <p onClick={signOut} className="google">
+                  <img src={logo} alt="google"></img>
+                  <span className="buttonGoogle">Sign Out</span>
+                </p>
+                :
+                <button onClick={signIn} className="google">
+                  <img src={logo} alt="google"></img>
+                  <span className="buttonGoogle">Sign in with Google</span>
+                </button>
+            }
             <button type="button" onClick={() => handleClick()} className="button">Login</button>
             <button type="button" onClick={() => changeView("signUp")}>Create an Account</button>
           </form>

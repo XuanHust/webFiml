@@ -12,16 +12,18 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
 } from "react-router-dom";
 import ButtonLogin from './components/buttonLogin/ButtonLogin';
+import { gapi} from 'gapi-script'
 
+const clientId = "781604133955-5vnqd8or7cev1jbloil96ossd4upl6av.apps.googleusercontent.com"
 
 function App(props) {
 
   const [account, setAccount] = useState("Login")
   const [login, setLogin] = useState(false)
-  const [err, setErr] = useState()
+  
 
   const handleLogin = (acc, flag) => {
     setLogin(flag)
@@ -29,6 +31,19 @@ function App(props) {
   }
 
   useEffect(() => {
+    localStorage.length === 1 &&
+    handleLogin(Object.keys(localStorage)[0], false)
+
+    sessionStorage.length === 1 &&
+    handleLogin("", true);
+
+    const start = () => {
+      gapi.client.init({
+        clientId: clientId,
+        scope:''
+      })
+    }
+    gapi.load('client:auth2', start)
 
   }, [])
 
@@ -49,7 +64,6 @@ function App(props) {
                   <Content />
                   <Footer />
                 </>
-
             }
             <ButtonLogin handleLogin={handleLogin} acc={account} />
           </>

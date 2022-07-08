@@ -8,7 +8,7 @@ const VideoApp = (props) => {
     sources: [
       {
         src: props.url,
-        type: "video/mp4"
+        type: "video/mp4",
       }
     ],
     poster: "https://res.cloudinary.com/xuanhust/image/upload/v1656555977/samples/WebFiml/Op-ket-thuc-1-game4v-1645151815-49_dtpjpq.jpg"
